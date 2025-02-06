@@ -4,6 +4,10 @@ import SEO from '../components/SEO';
 import { services } from '../data/services';
 
 const ServicesPage = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <SEO
@@ -26,6 +30,7 @@ const ServicesPage = () => {
                   key={service.id}
                   to={`/services/${service.slug}`}
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                  onClick={handleClick}
                 >
                   <div className="text-blue-600 mb-4">
                     <IconComponent className="h-12 w-12" />

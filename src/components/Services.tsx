@@ -3,6 +3,10 @@ import { services } from '../data/services';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +21,7 @@ const Services = () => {
             return (
             
               <div key={service.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <Link to={`/services/${service.slug}`} >
+                <Link to={`/services/${service.slug}`} onClick={handleClick}>
                 <div className="text-blue-600 mb-4">
                   <IconComponent className="h-12 w-12" />
                 </div>
