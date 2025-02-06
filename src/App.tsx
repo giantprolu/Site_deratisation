@@ -14,6 +14,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ContactPage from './pages/ContactPage';
 import CookieBanner from './components/CookieBanner';
 
+
 function App() {
   return (
     <HelmetProvider>
