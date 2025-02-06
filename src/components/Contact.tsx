@@ -66,7 +66,7 @@ const Contact = () => {
           
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Contacte Information</h3>
+              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <a href="tel:0767393885"className="flex items-center">
                   <Phone className="h-5 w-5 text-blue-600 mr-3" />
