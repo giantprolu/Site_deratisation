@@ -7,8 +7,6 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
 import TestimonialsPage from './pages/TestimonialsPage';
-import NewsPage from './pages/NewsPage';
-import ServiceAreasPage from './pages/ServiceAreasPage';
 import LegalNoticePage from './pages/LegalNoticePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ContactPage from './pages/ContactPage';
@@ -27,8 +25,6 @@ function App() {
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
               <Route path="/avis" element={<TestimonialsPage />} />
-              <Route path="/actualites-conseils" element={<NewsPage />} />
-              <Route path="/nos-interventions" element={<ServiceAreasPage />} />
               <Route path="/mentions-legales" element={<LegalNoticePage />} />
               <Route path="/politique-de-confidentialite" element={<PrivacyPolicyPage />} />
               <Route path="/contact" element={<ContactPage />} />

@@ -14,7 +14,6 @@ const Navbar = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-gray-700 hover:text-blue-600">Accueil</a>
-            <a href="/actualites-conseils" className="text-gray-700 hover:text-blue-600">Actualités et conseils</a>
             <a href="/services" className="text-gray-700 hover:text-blue-600">Services</a>
             <a href="/avis" className="text-gray-700 hover:text-blue-600">Avis</a>
             <a href="/contact" className="text-gray-700 hover:text-blue-600">Contact</a>
