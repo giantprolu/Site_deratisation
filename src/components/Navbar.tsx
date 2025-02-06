@@ -1,9 +1,26 @@
-import React, { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Menu, X, PhoneCall } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
+  const handleClickOutside = (event:any) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,20 +41,20 @@ const Navbar = () => {
           </div>
 
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden">
+        <div ref={menuRef} className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Accueil</a>
-            <a href="/services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
-            <a href="/avis" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Avis</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            <a href="/" className="block text-gray-700 hover:text-blue-600">Accueil</a>
+            <a href="/services" className="block text-gray-700 hover:text-blue-600">Services</a>
+            <a href="/avis" className="block text-gray-700 hover:text-blue-600">Avis</a>
+            <a href="/contact" className="block text-gray-700 hover:text-blue-600">Contact</a>
           </div>
         </div>
       )}
