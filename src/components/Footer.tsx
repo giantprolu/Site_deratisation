@@ -20,7 +20,7 @@ const Footer = () => {
               <li><a href="/#about" className="text-gray-400 hover:text-white">A Propos</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-white">Services</a></li>
               <li><a href="/reviews" className="text-gray-400 hover:text-white">Avis</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white">Contacte</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white">Contact</a></li>
             </ul>
           </div>
           
@@ -54,7 +54,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2024 CleanPro. All rights reserved.</p>
+            <p className="text-gray-400">© 2024 HygieneProtect3D. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="/politique-de-confidentialite" className="text-gray-400 hover:text-white">Politique de confidentialité</a>
               <a href="/mentions-legales" className="text-gray-400 hover:text-white">Mentions Légal</a>

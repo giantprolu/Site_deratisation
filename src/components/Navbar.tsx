@@ -18,7 +18,7 @@ const Navbar = () => {
             <a href="/actualites-conseils" className="text-gray-700 hover:text-blue-600">Actualités et conseils</a>
             <a href="/services" className="text-gray-700 hover:text-blue-600">Services</a>
             <a href="/avis" className="text-gray-700 hover:text-blue-600">Avis</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-600">Contacte</a>
+            <a href="/contact" className="text-gray-700 hover:text-blue-600">Contact</a>
             <a href="tel:0767393885" className="flex items-center text-blue-600">
               <PhoneCall className="w-4 h-4 mr-2" />
               <span>07 67 39 38 85</span>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <a href="/actualites-conseils" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Actualités et conseils</a>
             <a href="/services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
             <a href="/avis" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Avis</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contacte</a>
+            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
           </div>
         </div>
       )}
