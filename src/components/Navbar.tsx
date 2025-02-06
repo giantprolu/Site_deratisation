@@ -35,7 +35,6 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Accueil</a>
-            <a href="/actualites-conseils" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Actualités et conseils</a>
             <a href="/services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
             <a href="/avis" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Avis</a>
             <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
