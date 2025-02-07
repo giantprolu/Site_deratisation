@@ -71,7 +71,7 @@ const ServiceDetailPage = () => {
                   Contactez-nous pour obtenir un devis personnalisé adapté à vos besoins.
                 </p>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Demander un devis
