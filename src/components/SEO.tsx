@@ -12,20 +12,23 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title,
-  description,
+  description ="Hygiène Protect 3D : spécialiste de la dératisation, désinsectisation et désinfection. Contactez-nous pour un service rapide et efficace.",
   canonical,
   type = 'website',
   name = 'Hygiène Protect 3D',
-  image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+  image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
 }) => {
-  const siteUrl = window.location.origin;
-  const url = canonical ? `${siteUrl}${canonical}` : siteUrl;
+  const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://site-deratisation.vercel.app";
+  const url = canonical && canonical.startsWith("/") ? `${siteUrl}${canonical}` : siteUrl;
+  const isHomePage = url === siteUrl;
 
   return (
     <Helmet>
       {/* Standard metadata */}
-      <title>{`${title} | ${name}`}</title>
+      <title>{isHomePage ? name : `${title} | ${name}`}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content="dératisation, désinsectisation, désinfection, hygiène, nettoyage, entreprise, services" />
+      <meta name="author" content="Hygiène Protect 3D" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
@@ -35,12 +38,6 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
 
       {/* Schema.org */}
       <script type="application/ld+json">

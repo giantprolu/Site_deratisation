@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react';
+import SEO from './SEO';
 
 const reviews = [
   {
@@ -20,31 +21,37 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section id="reviews" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Avis Clients</h2>
-          <p className="text-xl text-gray-600">Votre avis compte pour nous !</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reviews.map((review, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex mb-4">
-                {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
+    <>
+      <SEO 
+        title="Avis Clients" 
+        description="Lisez les avis de nos clients satisfaits par nos services de dératisation, désinsectisation et désinfection. HygièneProtect3D offre des interventions rapides et professionnelles pour garantir un environnement sain et sûr."
+      />
+      <section id="reviews" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Avis Clients</h2>
+            <p className="text-xl text-gray-600">Votre avis compte pour nous !</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {reviews.map((review, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <div className="flex mb-4">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="font-semibold text-gray-900">{review.name}</p>
+                <div className="border-t pt-4">
+                  <p className="text-gray-600 mb-4">{review.content}</p>
+                </div>
               </div>
-              <p className="font-semibold text-gray-900">{review.name}</p>
-              <div className="border-t pt-4">
-                <p className="text-gray-600 mb-4">{review.content}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          
         </div>
-        
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
