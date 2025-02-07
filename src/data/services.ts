@@ -34,7 +34,7 @@ export const services: Service[] = [
       'Respect des normes d\'hygiène',
       'Solutions écologiques'
     ],
-    image: 'https://github.com/giantprolu/Site_deratisation/blob/master/src/Asset/deratisation2.webp'
+    image: 'https://primary.jwwb.nl/public/l/q/t/temp-qrurzvmtqdzhqpizzbxa/india-359_1280-high.jpg?enable-io=true&enable=upscale&crop=1279%2C960%2Cx1%2Cy0%2Csafe&width=438&height=329'
   },
   {
     id: '2',
@@ -56,7 +56,7 @@ export const services: Service[] = [
       'Protection de la santé',
       'Tranquillité d\'esprit'
     ],
-    image: 'https://example.com/path/to/desinfection.webp'
+    image: 'https://primary.jwwb.nl/public/l/q/t/temp-qrurzvmtqdzhqpizzbxa/coronavirus-4945416_1280-high.jpg?enable-io=true&enable=upscale&crop=1280%2C845%2Cx0%2Cy0%2Csafe&width=900&height=594'
   },
   {
     id: '3',
@@ -78,7 +78,7 @@ export const services: Service[] = [
       'Méthodes sécurisées',
       'Expertise reconnue'
     ],
-    image: 'https://example.com/path/to/désinsectisation.webp'
+    image: 'https://primary.jwwb.nl/public/l/q/t/temp-qrurzvmtqdzhqpizzbxa/7f20beda-3225-4ffc-96c4-575aa32ecfc5-high.jpg?enable-io=true&enable=upscale&crop=1200%2C1600%2Cx0%2Cy0%2Csafe&width=438&height=584'
   },
   {
     id: '4',
@@ -100,7 +100,7 @@ export const services: Service[] = [
       'Méthodes éthiques',
       'Maintenance régulière'
     ],
-    image: 'https://images.unsplash.com/photo-1583407733101-dea598145d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://primary.jwwb.nl/unsplash/Y5PqH1QIokA.jpg'
   },
   {
     id: '5',
@@ -122,7 +122,7 @@ export const services: Service[] = [
       'Conformité aux normes',
       'Satisfaction garantie'
     ],
-    image: 'https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://primary.jwwb.nl/unsplash/ce2r9sPR_9E.jpg?enable-io=true&enable=upscale&crop=853%2C1280%2Cx641%2Cy0%2Csafe&width=283&height=425'
   },
   {
     id: '6',
@@ -144,7 +144,7 @@ export const services: Service[] = [
       'Respect environnemental',
       'Traçabilité garantie'
     ],
-    image: 'https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://primary.jwwb.nl/public/l/q/t/temp-qrurzvmtqdzhqpizzbxa/debarras-de-maison-en-france-high-nqjau3.png'
   },
   {
     id: '7',
@@ -166,6 +166,6 @@ export const services: Service[] = [
       'Conformité réglementaire',
       'Performance optimale'
     ],
-    image: 'https://images.unsplash.com/photo-1585909695284-32d2985ac9c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://primary.jwwb.nl/public/l/q/t/temp-qrurzvmtqdzhqpizzbxa/piping-1253686_1280-high.jpg'
   }
 ];
