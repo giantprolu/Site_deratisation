@@ -1,4 +1,3 @@
-import React from 'react';
 import {  PhoneCall, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -27,13 +26,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="/services" className="text-gray-400 hover:text-white">Dératisation</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Désinféction</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Désinsectisation</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Dépigeonnage</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Hygiène du Bâtiment</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Débarras Pro</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white">Assainissement VMC</a></li>
+                <li><a href="/services/deratisation" className="text-gray-400 hover:text-white">Dératisation</a></li>
+                <li><a href="/services/desinfection" className="text-gray-400 hover:text-white">Désinfection</a></li>
+                <li><a href="/services/desinsectisation" className="text-gray-400 hover:text-white">Désinsectisation</a></li>
+                <li><a href="/services/depigeonnage" className="text-gray-400 hover:text-white">Dépigeonnage</a></li>
+                <li><a href="/services/hygiene-du-batiment" className="text-gray-400 hover:text-white">Hygiène du Bâtiment</a></li>
+                <li><a href="/services/debarras-pro" className="text-gray-400 hover:text-white">Débarras Pro</a></li>
+                <li><a href="/services/assainissement-vmc" className="text-gray-400 hover:text-white">Assainissement VMC</a></li>
             </ul>
           </div>
           
