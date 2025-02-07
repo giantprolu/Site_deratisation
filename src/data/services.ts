@@ -34,7 +34,7 @@ export const services: Service[] = [
       'Respect des normes d\'hygiène',
       'Solutions écologiques'
     ],
-    image: 'https://images.unsplash.com/photo-1584613862210-af9f4e1cb8e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://github.com/giantprolu/Site_deratisation/blob/master/src/Asset/deratisation2.webp'
   },
   {
     id: '2',
@@ -56,7 +56,7 @@ export const services: Service[] = [
       'Protection de la santé',
       'Tranquillité d\'esprit'
     ],
-    image: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://example.com/path/to/desinfection.webp'
   },
   {
     id: '3',
@@ -78,7 +78,7 @@ export const services: Service[] = [
       'Méthodes sécurisées',
       'Expertise reconnue'
     ],
-    image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: 'https://example.com/path/to/désinsectisation.webp'
   },
   {
     id: '4',
