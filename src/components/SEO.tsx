@@ -19,8 +19,8 @@ const SEO: React.FC<SEOProps> = ({
   image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
 }) => {
   const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://site-deratisation.vercel.app";
-  const url = canonical && canonical.startsWith("") ? `${siteUrl}${canonical}` : siteUrl;
-  const isHomePage = !canonical || canonical === "";
+  const url = canonical && canonical.startsWith("/") ? `${siteUrl}${canonical}` : siteUrl;
+  const isHomePage = !canonical || canonical === "/";
 
   return (
     <Helmet>
