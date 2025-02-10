@@ -107,14 +107,14 @@ const Contact = () => {
                   </a>
                   <div className="flex items-center">
                     <MapPin className="h-5 w-5 text-blue-600 mr-3" />
-                    <span>Torcy, 77200</span>
+                    <span>Paris, 75000</span>
                   </div>
                 </div>
               </div>
               
               <div className="h-80 bg-gray-200 rounded-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.3610361325333!2d2.6365203562451467!3d48.84974048397198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61aad94e49cdf%3A0x40b82c3688c4980!2s77200%20Torcy!5e0!3m2!1sfr!2sfr!4v1738837299686!5m2!1sfr!2sfr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80717.75810027313!2d2.2646344809035113!3d48.858825492060404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e1!3m2!1sfr!2sfr!4v1739204594932!5m2!1sfr!2sfr"
                   width="600" 
                   height="450" 
                   loading="lazy" 
