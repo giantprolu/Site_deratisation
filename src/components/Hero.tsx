@@ -1,8 +1,21 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import SEO from './SEO';
+import About from './About';
+import Services from './Services';
+import Reviews from './Reviews';
+import Contact from './Contact';
+
+
 
 const Hero = () => {
   return (
+    <>
+      <SEO 
+        title="Accueil" 
+        description="Bienvenue sur Hygiène Protect 3D, votre spécialiste en dératisation, désinsectisation et désinfection. Découvrez nos services professionnels." 
+        canonical="/" 
+      />
     <div id="home" className="relative h-screen">
       <div 
         className="absolute inset-0 bg-cover bg-center"
@@ -31,6 +44,11 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    <About />
+    <Services />
+    <Reviews />
+    <Contact />
+    </>
   );
 };
 

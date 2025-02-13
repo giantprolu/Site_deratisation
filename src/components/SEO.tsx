@@ -25,7 +25,7 @@ const SEO: React.FC<SEOProps> = ({
   return (
     <Helmet>
       {/* Standard metadata */}
-      <title>{isHomePage ? name : `${title} | ${name}`}</title>
+      <title>{isHomePage ? 'Accueil' : `${title} | ${name}`}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content="dératisation, désinsectisation, désinfection, hygiène, nettoyage, entreprise, services" />
       <meta name="author" content="Hygiène Protect 3D" />

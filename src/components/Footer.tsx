@@ -1,6 +1,14 @@
-import {  PhoneCall, Mail } from 'lucide-react';
+import { PhoneCall, Mail } from 'lucide-react';
 
 const Footer = () => {
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:0767393885';
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:contact@hygieneprotect3d.fr';
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -8,7 +16,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Hygiène Protect 3D</h3>
             <p className="text-gray-400">
-            Services de nettoyage professionnels pour les entreprises. Qualité, fiabilité et excellence dans les moindres détails.
+              Services de nettoyage professionnels pour les entreprises. Qualité, fiabilité et excellence dans les moindres détails.
             </p>
           </div>
           
@@ -26,27 +34,27 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-                <li><a href="/services/deratisation" className="text-gray-400 hover:text-white">Dératisation</a></li>
-                <li><a href="/services/desinfection" className="text-gray-400 hover:text-white">Désinfection</a></li>
-                <li><a href="/services/desinsectisation" className="text-gray-400 hover:text-white">Désinsectisation</a></li>
-                <li><a href="/services/depigeonnage" className="text-gray-400 hover:text-white">Dépigeonnage</a></li>
-                <li><a href="/services/hygiene-du-batiment" className="text-gray-400 hover:text-white">Hygiène du Bâtiment</a></li>
-                <li><a href="/services/debarras-pro" className="text-gray-400 hover:text-white">Débarras Pro</a></li>
-                <li><a href="/services/assainissement-vmc" className="text-gray-400 hover:text-white">Assainissement VMC</a></li>
+              <li><a href="/services/deratisation" className="text-gray-400 hover:text-white">Dératisation</a></li>
+              <li><a href="/services/desinfection" className="text-gray-400 hover:text-white">Désinfection</a></li>
+              <li><a href="/services/desinsectisation" className="text-gray-400 hover:text-white">Désinsectisation</a></li>
+              <li><a href="/services/depigeonnage" className="text-gray-400 hover:text-white">Dépigeonnage</a></li>
+              <li><a href="/services/hygiene-du-batiment" className="text-gray-400 hover:text-white">Hygiène du Bâtiment</a></li>
+              <li><a href="/services/debarras-pro" className="text-gray-400 hover:text-white">Débarras Pro</a></li>
+              <li><a href="/services/assainissement-vmc" className="text-gray-400 hover:text-white">Assainissement VMC</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Contactez nous !</h4>
             <div className="space-y-2">
-              <a href="tel:0767393885" className="text-gray-400 hover:text-white">
-                <PhoneCall className="h-6 w-6" />
-                  <span>07 67 39 38 85</span>
-              </a>
-              <a href="mailto:contact@hygieneprotect3d.fr" className="text-gray-400 hover:text-white">
-                <Mail className="h-6 w-6" />
-                  <span>contact@hygieneprotect3d.fr</span>
-              </a>
+              <button onClick={handlePhoneClick} className="text-gray-400 hover:text-white flex items-center">
+                <PhoneCall className="h-6 w-6 mr-2" />
+                <span>07 67 39 38 85</span>
+              </button>
+              <button onClick={handleEmailClick} className="text-gray-400 hover:text-white flex items-center">
+                <Mail className="h-6 w-6 mr-2" />
+                <span>contact@hygieneprotect3d.fr</span>
+              </button>
             </div>
           </div>
         </div>

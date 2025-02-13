@@ -1,11 +1,16 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { PhoneCall, Mail, MapPin } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 import SEO from './SEO';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mwpvqboj");
-
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:0767393885';
+  };
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:contact@hygieneprotect3d.fr';
+  };
   return (
     <>
       <SEO
@@ -97,14 +102,14 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
                 <div className="space-y-4">
-                  <a href="tel:0767393885"className="flex items-center">
-                    <Phone className="h-5 w-5 text-blue-600 mr-3" />
-                    <span>07 67 39 38 85</span>
-                  </a>
-                  <a href="mailto:contact@hygieneprotect3d.fr"className="flex items-center">
+                <button onClick={handlePhoneClick} className="flex items-center">
+                  <PhoneCall className="h-5 w-5 text-blue-600 mr-3" />
+                  <span>07 67 39 38 85</span>
+                </button>
+                  <button onClick={handleEmailClick}className="flex items-center">
                     <Mail className="h-5 w-5 text-blue-600 mr-3" />
                     <span>contact@hygieneprotect3d.fr</span>
-                  </a>
+                  </button>
                   <div className="flex items-center">
                     <MapPin className="h-5 w-5 text-blue-600 mr-3" />
                     <span>Paris, 75000</span>
