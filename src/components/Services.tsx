@@ -1,4 +1,3 @@
-import React from 'react';
 import { services } from '../data/services';
 import { Link } from 'react-router-dom';
 import SEO from './SEO';
