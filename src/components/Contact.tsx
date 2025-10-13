@@ -18,113 +18,161 @@ const Contact = () => {
         description="Obtenez un devis gratuitement pour nos services de nettoyage et d'hygiène. Contactez Hygiène Protect 3D dès aujourd'hui."
         canonical="/contact"
       />
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-gradient-to-b from-white to-nature-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez Nous</h2>
-            <p className="text-xl text-gray-600">Obtenez un devis gratuitement</p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-eco-green-100 text-eco-green-700 rounded-full text-sm font-medium mb-4">
+              Demande de devis
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-nature-gray-900 mb-4">Contactez-Nous</h2>
+            <p className="text-xl text-nature-gray-600 max-w-3xl mx-auto">
+              Obtenez un devis gratuit et sans engagement en 24h
+            </p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
+            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               {state.succeeded ? (
-                <p>Merci pour votre message !</p>
+                <div className="text-center py-12">
+                  <div className="w-20 h-20 bg-eco-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-10 h-10 text-eco-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-nature-gray-900 mb-2">Message envoyé avec succès !</h3>
+                  <p className="text-nature-gray-600 mb-6">Nous vous répondrons dans les plus brefs délais.</p>
+                  <button
+                    onClick={() => window.location.reload()}
+                    className="inline-flex items-center gap-2 px-6 py-3 text-white bg-eco-green-600 hover:bg-eco-green-700 rounded-lg transition-colors duration-300"
+                  >
+                    Envoyer un nouveau message
+                  </button>
+                </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nom</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-nature-gray-700 mb-2">Nom complet</label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-eco-green-500 focus:ring-2 focus:ring-eco-green-200 transition-colors"
+                      placeholder="Votre nom"
                     />
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-nature-gray-700 mb-2">Email</label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-eco-green-500 focus:ring-2 focus:ring-eco-green-200 transition-colors"
+                      placeholder="votre@email.com"
                     />
-                    <ValidationError 
-                      prefix="Email" 
+                    <ValidationError
+                      prefix="Email"
                       field="email"
                       errors={state.errors}
+                      className="text-red-500 text-sm mt-1"
                     />
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-700">Services</label>
+                    <label htmlFor="service" className="block text-sm font-medium text-nature-gray-700 mb-2">Service souhaité</label>
                     <select
                       id="service"
                       name="service"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-eco-green-500 focus:ring-2 focus:ring-eco-green-200 transition-colors"
                     >
+                      <option value="">Sélectionnez un service</option>
                       <option>Dératisation</option>
+                      <option>Désinsectisation</option>
                       <option>Désinfection</option>
                       <option>Dépigeonnage</option>
                       <option>Hygiène du bâtiment</option>
-                      <option>Debarras Pro</option>
+                      <option>Débarras Pro</option>
                       <option>Assainissement VMC</option>
                     </select>
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-nature-gray-700 mb-2">Message</label>
                     <textarea
                       id="message"
                       name="message"
-                      rows={4}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      rows={5}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-eco-green-500 focus:ring-2 focus:ring-eco-green-200 transition-colors resize-none"
+                      placeholder="Décrivez votre besoin..."
                     ></textarea>
-                    <ValidationError 
-                      prefix="Message" 
+                    <ValidationError
+                      prefix="Message"
                       field="message"
                       errors={state.errors}
+                      className="text-red-500 text-sm mt-1"
                     />
                   </div>
-                  
+
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="w-full bg-eco-green-600 text-white py-4 px-6 rounded-lg hover:bg-eco-green-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Envoyer le message
+                    {state.submitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                   </button>
                 </form>
               )}
             </div>
-            
+
             <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-                <div className="space-y-4">
-                <button onClick={handlePhoneClick} className="flex items-center">
-                  <PhoneCall className="h-5 w-5 text-blue-600 mr-3" />
-                  <span>07 67 39 38 85</span>
-                </button>
-                  <button onClick={handleEmailClick}className="flex items-center">
-                    <Mail className="h-5 w-5 text-blue-600 mr-3" />
-                    <span>contact@hygieneprotect3d.fr</span>
+              <div className="bg-gradient-to-br from-eco-green-50 to-white rounded-2xl shadow-lg p-8 border border-eco-green-100">
+                <h3 className="text-2xl font-bold text-nature-gray-900 mb-6">Informations de contact</h3>
+                <div className="space-y-6">
+                  <button onClick={handlePhoneClick} className="flex items-start gap-4 w-full text-left group">
+                    <div className="flex-shrink-0 w-12 h-12 bg-eco-green-600 rounded-lg flex items-center justify-center group-hover:bg-eco-green-700 transition-colors">
+                      <PhoneCall className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-nature-gray-900">Téléphone</div>
+                      <div className="text-eco-green-600 hover:text-eco-green-700">07 67 39 38 85</div>
+                      <div className="text-sm text-nature-gray-500">Disponible 24h/24 & 7j/7</div>
+                    </div>
                   </button>
-                  <div className="flex items-center">
-                    <MapPin className="h-5 w-5 text-blue-600 mr-3" />
-                    <span>Paris, 75000</span>
+                  <button onClick={handleEmailClick} className="flex items-start gap-4 w-full text-left group">
+                    <div className="flex-shrink-0 w-12 h-12 bg-eco-green-600 rounded-lg flex items-center justify-center group-hover:bg-eco-green-700 transition-colors">
+                      <Mail className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-nature-gray-900">Email</div>
+                      <div className="text-eco-green-600 hover:text-eco-green-700 break-all">contact@hygieneprotect3d.fr</div>
+                      <div className="text-sm text-nature-gray-500">Réponse sous 24h</div>
+                    </div>
+                  </button>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-eco-green-600 rounded-lg flex items-center justify-center">
+                      <MapPin className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-nature-gray-900">Zone d'intervention</div>
+                      <div className="text-nature-gray-600">Île-de-France, Est et Nord</div>
+                      <div className="text-sm text-nature-gray-500">Basés à Bondy (93)</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              
-              <div className="h-80 bg-gray-200 rounded-lg">
+
+              <div className="h-80 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80717.75810027313!2d2.2646344809035113!3d48.858825492060404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e1!3m2!1sfr!2sfr!4v1739204594932!5m2!1sfr!2sfr"
-                  width="600" 
-                  height="450" 
-                  loading="lazy" 
-                  title="map"
-                  className="w-full h-full rounded-lg"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                  title="Carte de localisation"
+                  className="w-full h-full"
                 ></iframe>
               </div>
             </div>

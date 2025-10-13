@@ -84,26 +84,26 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50" aria-label="Main Navigation">
+    <nav className="bg-white shadow-sm fixed w-full z-50 border-b border-gray-100" aria-label="Main Navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-blue-600">Hygiène Protect 3D</span>
+            <span className="text-2xl font-bold text-eco-green-700">Hygiène Protect 3D</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className={`text-blue-900 hover:text-blue-700 ${activeSection === 'about' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Accueil">Accueil</a>
-            <a href="#services" className={`text-blue-900 hover:text-blue-700 ${activeSection === 'services' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Services" onClick={handleServiceClick}>Services</a>
-            <a href="#reviews" className={`text-blue-900 hover:text-blue-700 ${activeSection === 'reviews' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Avis" onClick={handleAvisClick}>Avis</a>
-            <a href="#contact" className={`text-blue-900 hover:text-blue-700 ${activeSection === 'contact' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Contact" onClick={handleContactClick}>Contact</a>
-            <button onClick={handlePhoneClick} className="flex items-center text-blue-600" aria-label="Phone Number">
-              <PhoneCall className="w-4 h-4 mr-2" />
+            <a href="/" className={`text-nature-gray-700 hover:text-eco-green-600 transition-colors font-medium ${activeSection === 'about' ? 'text-eco-green-600' : ''}`} aria-label="Accueil">Accueil</a>
+            <a href="#services" className={`text-nature-gray-700 hover:text-eco-green-600 transition-colors font-medium ${activeSection === 'services' ? 'text-eco-green-600' : ''}`} aria-label="Services" onClick={handleServiceClick}>Services</a>
+            <a href="#reviews" className={`text-nature-gray-700 hover:text-eco-green-600 transition-colors font-medium ${activeSection === 'reviews' ? 'text-eco-green-600' : ''}`} aria-label="Avis" onClick={handleAvisClick}>Avis</a>
+            <a href="#contact" className={`text-nature-gray-700 hover:text-eco-green-600 transition-colors font-medium ${activeSection === 'contact' ? 'text-eco-green-600' : ''}`} aria-label="Contact" onClick={handleContactClick}>Contact</a>
+            <button onClick={handlePhoneClick} className="flex items-center gap-2 px-4 py-2 bg-eco-green-600 hover:bg-eco-green-700 text-white rounded-lg transition-colors font-medium" aria-label="Phone Number">
+              <PhoneCall className="w-4 h-4" />
               <span>07 67 39 38 85</span>
             </button>
           </div>
 
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700" aria-label="Menu Button">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-nature-gray-700" aria-label="Menu Button">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -111,12 +111,16 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div ref={menuRef} className="md:hidden" aria-label="Mobile Navigation">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-            <a href="/" className={`text-blue-900 hover:text-blue-700 py-2 ${activeSection === 'accueil' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Accueil" onClick={() => setIsOpen(false)}>Accueil</a>
-            <a href="#services" className={`text-blue-900 hover:text-blue-700 py-2 ${activeSection === 'services' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Services" onClick={handleServiceClick}>Services</a>
-            <a href="#reviews" className={`text-blue-900 hover:text-blue-700 py-2 ${activeSection === 'reviews' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Avis" onClick={handleAvisClick}>Avis</a>
-            <a href="#contact" className={`text-blue-900 hover:text-blue-700 py-2 ${activeSection === 'contact' ? 'bg-blue-100 rounded-md px-3 py-2' : ''}`} aria-label="Contact" onClick={handleContactClick}>Contact</a>
+        <div ref={menuRef} className="md:hidden bg-white border-t border-gray-100" aria-label="Mobile Navigation">
+          <div className="px-4 pt-2 pb-4 space-y-2">
+            <a href="/" className={`block text-nature-gray-700 hover:text-eco-green-600 py-2 transition-colors ${activeSection === 'accueil' ? 'text-eco-green-600' : ''}`} aria-label="Accueil" onClick={() => setIsOpen(false)}>Accueil</a>
+            <a href="#services" className={`block text-nature-gray-700 hover:text-eco-green-600 py-2 transition-colors ${activeSection === 'services' ? 'text-eco-green-600' : ''}`} aria-label="Services" onClick={handleServiceClick}>Services</a>
+            <a href="#reviews" className={`block text-nature-gray-700 hover:text-eco-green-600 py-2 transition-colors ${activeSection === 'reviews' ? 'text-eco-green-600' : ''}`} aria-label="Avis" onClick={handleAvisClick}>Avis</a>
+            <a href="#contact" className={`block text-nature-gray-700 hover:text-eco-green-600 py-2 transition-colors ${activeSection === 'contact' ? 'text-eco-green-600' : ''}`} aria-label="Contact" onClick={handleContactClick}>Contact</a>
+            <button onClick={handlePhoneClick} className="flex items-center gap-2 w-full px-4 py-2 bg-eco-green-600 hover:bg-eco-green-700 text-white rounded-lg transition-colors mt-2" aria-label="Phone Number">
+              <PhoneCall className="w-4 h-4" />
+              <span>07 67 39 38 85</span>
+            </button>
           </div>
         </div>
       )}
