@@ -45,7 +45,7 @@ const Footer = () => {
               <li><a href="/services/depigeonnage" className="text-nature-gray-300 hover:text-eco-green-400 transition-colors">Dépigeonnage</a></li>
               <li><a href="/services/hygiene-du-batiment" className="text-nature-gray-300 hover:text-eco-green-400 transition-colors">Hygiène du Bâtiment</a></li>
               <li><a href="/services/debarras-pro" className="text-nature-gray-300 hover:text-eco-green-400 transition-colors">Débarras Pro</a></li>
-              <li><a href="/services/assainissement-vmc" className="text-nature-gray-300 hover:text-eco-green-400 transition-colors">Assainissement VMC</a></li>
+              <li><a href="/services/assainissement-vmc" className="text-nature-gray-300 hover:text-eco-green-400 transition-colors">Assainissement</a></li>
             </ul>
           </div>
 

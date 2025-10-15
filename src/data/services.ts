@@ -471,14 +471,14 @@ export const services: Service[] = [
   },
   {
     id: '7',
-    title: 'Assainissement VMC à Paris',
+    title: 'Assainissement à Paris',
     slug: 'assainissement-vmc',
-    description: 'Service professionnel d\'assainissement et entretien VMC à Paris. Nettoyage, désinfection et maintenance des systèmes de ventilation. Inspection vidéo, décontamination des gaines, amélioration de la qualité de l\'air intérieur. Conformité réglementaire garantie.',
-    fullDescription: 'Notre service d\'assainissement VMC à Paris garantit la qualité de l\'air intérieur et le bon fonctionnement de vos systèmes de ventilation. Les réseaux de ventilation mal entretenus accumulent poussières, moisissures, bactéries et allergènes, dégradant la qualité de l\'air et favorisant les problèmes respiratoires. Nous intervenons sur tous types de systèmes : VMC simple flux, VMC double flux, VMC hygroréglable, ventilation par extraction, centrales de traitement d\'air (CTA). Nos prestations incluent l\'inspection vidéo endoscopique des gaines, le nettoyage mécanique et aspiration des conduits, la désinfection antibactérienne des réseaux, le remplacement des filtres, le contrôle des débits d\'air et le réglage des installations. Service essentiel pour la santé, obligatoire pour les ERP (Établissements Recevant du Public) et fortement recommandé pour les bureaux, commerces, restaurants et habitations collectives.',
+    description: 'Service professionnel d\'assainissement et entretien à Paris. Nettoyage, désinfection et maintenance des systèmes de ventilation. Inspection vidéo, décontamination des gaines, amélioration de la qualité de l\'air intérieur. Conformité réglementaire garantie.',
+    fullDescription: 'Notre service d\'assainissement à Paris garantit la qualité de l\'air intérieur et le bon fonctionnement de vos systèmes de ventilation. Les réseaux de ventilation mal entretenus accumulent poussières, moisissures, bactéries et allergènes, dégradant la qualité de l\'air et favorisant les problèmes respiratoires. Nous intervenons sur tous types de systèmes : VMC simple flux, VMC double flux, VMC hygroréglable, ventilation par extraction, centrales de traitement d\'air (CTA). Nos prestations incluent l\'inspection vidéo endoscopique des gaines, le nettoyage mécanique et aspiration des conduits, la désinfection antibactérienne des réseaux, le remplacement des filtres, le contrôle des débits d\'air et le réglage des installations. Service essentiel pour la santé, obligatoire pour les ERP (Établissements Recevant du Public) et fortement recommandé pour les bureaux, commerces, restaurants et habitations collectives.',
     icon: Fan,
-    metaDescription: 'Assainissement VMC Paris - Nettoyage et désinfection ventilation. Inspection vidéo, maintenance système VMC. Qualité air intérieur. Devis gratuit Île-de-France.',
-    imageAlt: 'Technicien effectuant l\'assainissement et le nettoyage d\'un système VMC à Paris',
-    imageTitle: 'Assainissement VMC Paris - Entretien professionnel ventilation et qualité air',
+    metaDescription: 'Assainissement Paris - Nettoyage et désinfection ventilation. Inspection vidéo, maintenance système. Qualité air intérieur. Devis gratuit Île-de-France.',
+    imageAlt: 'Technicien effectuant l\'assainissement et le nettoyage d\'un système à Paris',
+    imageTitle: 'Assainissement Paris - Entretien professionnel ventilation et qualité air',
     features: [
       'Inspection vidéo endoscopique complète des réseaux de ventilation',
       'Nettoyage mécanique approfondi des gaines et conduits d\'air',
@@ -486,7 +486,7 @@ export const services: Service[] = [
       'Désinfection antibactérienne et antivirale des circuits de ventilation',
       'Remplacement des filtres encrassés par des filtres neufs haute efficacité',
       'Contrôle et mesure des débits d\'air pour vérifier la conformité',
-      'Réglage et optimisation des installations VMC pour performances maximales',
+      'Réglage et optimisation des installations pour performances maximales',
       'Détection et réparation des fuites et dysfonctionnements',
       'Maintenance préventive programmée pour éviter l\'encrassement',
       'Certification de conformité réglementaire pour contrôles officiels'
@@ -496,7 +496,7 @@ export const services: Service[] = [
       'Réduction des allergies, asthme et problèmes respiratoires',
       'Économies d\'énergie jusqu\'à 30% grâce à l\'optimisation du système',
       'Conformité aux réglementations sanitaires et obligations légales (ERP)',
-      'Performance optimale et durée de vie prolongée de votre VMC',
+      'Performance optimale et durée de vie prolongée de votre',
       'Élimination des odeurs désagréables et des moisissures',
       'Prévention des risques d\'incendie liés à l\'accumulation de poussières',
       'Traçabilité complète avec rapports d\'intervention et certificats de conformité'
@@ -524,22 +524,22 @@ export const services: Service[] = [
         name: 'Caméras d\'Inspection Endoscopique',
         description: 'Caméras vidéo endoscopiques professionnelles haute définition avec éclairage LED intégré pour l\'inspection des réseaux de ventilation. Têtes rotatives à 360° pour visualiser l\'intérieur des gaines, même dans les coudes et zones difficiles d\'accès. Enregistrement vidéo pour documenter l\'état avant/après intervention. Câbles flexibles de 20 à 50 mètres pour explorer l\'intégralité des réseaux. Écrans de contrôle HD pour analyse en temps réel. Indispensables pour diagnostiquer l\'encrassement et planifier l\'intervention.',
         image: '/images/assainissement.webp',
-        imageAlt: 'Caméra d\'inspection endoscopique pour diagnostic VMC',
-        imageTitle: 'Inspection vidéo VMC Paris - Diagnostic professionnel ventilation'
+        imageAlt: 'Caméra d\'inspection endoscopique pour diagnostic',
+        imageTitle: 'Inspection vidéo Paris - Diagnostic professionnel ventilation'
       },
       {
         name: 'Équipements de Nettoyage Spécialisés',
-        description: 'Matériel professionnel spécifique au nettoyage de VMC : brosses rotatives motorisées adaptées aux différents diamètres de gaines, aspirateurs industriels haute puissance avec filtres HEPA pour capturer les particules fines, système de brossage pneumatique pour zones difficiles, kit de nettoyage pour bouches d\'extraction et grilles. Perches télescopiques et rallonges pour atteindre tous les points du réseau. Équipements conformes aux normes de sécurité pour intervention en toute sérénité.',
+        description: 'Matériel professionnel spécifique au nettoyage : brosses rotatives motorisées adaptées aux différents diamètres de gaines, aspirateurs industriels haute puissance avec filtres HEPA pour capturer les particules fines, système de brossage pneumatique pour zones difficiles, kit de nettoyage pour bouches d\'extraction et grilles. Perches télescopiques et rallonges pour atteindre tous les points du réseau. Équipements conformes aux normes de sécurité pour intervention en toute sérénité.',
         image: '/images/assainissement.webp',
-        imageAlt: 'Équipements de nettoyage professionnel pour systèmes VMC',
-        imageTitle: 'Matériel nettoyage VMC Paris - Équipements professionnels assainissement'
+        imageAlt: 'Équipements de nettoyage professionnel',
+        imageTitle: 'Matériel nettoyage  Paris - Équipements professionnels assainissement'
       },
       {
         name: 'Appareils de Mesure et Contrôle',
         description: 'Instruments de mesure professionnels pour vérifier les performances et la conformité : anémomètres pour mesure des vitesses et débits d\'air, manomètres différentiels pour contrôle de pression, thermo-hygromètres pour température et humidité, détecteurs de CO2 pour qualité de l\'air. Enregistreurs de données pour suivi dans le temps. Équipements calibrés et certifiés pour garantir la fiabilité des mesures et la conformité aux normes réglementaires (Règlement Sanitaire Départemental, Code du Travail).',
         image: '/images/assainissement.webp',
-        imageAlt: 'Appareils de mesure professionnels pour contrôle VMC',
-        imageTitle: 'Instruments de mesure VMC Paris - Contrôle conformité ventilation'
+        imageAlt: 'Appareils de mesure professionnels',
+        imageTitle: 'Instruments de mesure Paris - Contrôle conformité ventilation'
       }
     ]
   }

@@ -95,7 +95,7 @@ const Contact = () => {
                       <option>Dépigeonnage</option>
                       <option>Hygiène du bâtiment</option>
                       <option>Débarras Pro</option>
-                      <option>Assainissement VMC</option>
+                      <option>Assainissement</option>
                     </select>
                   </div>
 
