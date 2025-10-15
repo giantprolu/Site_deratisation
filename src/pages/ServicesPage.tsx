@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { services } from '../data/services';
@@ -32,11 +31,11 @@ const ServicesPage = () => {
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                   onClick={handleClick}
                 >
-                  <div className="text-blue-600 mb-4">
+                  <div className="text-eco-green-600 mb-4">
                     <IconComponent className="h-12 w-12" />
                   </div>
                   <h2 className="text-xl font-semibold mb-2">{service.title}</h2>
-                  <p className="text-gray-600">{service.shortDescription}</p>
+                  <p className="text-gray-600">{service.description}</p>
                 </Link>
               );
             })}

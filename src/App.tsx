@@ -4,11 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ServicesPage from './pages/ServicesPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
-import TestimonialsPage from './pages/TestimonialsPage';
 import LegalNoticePage from './pages/LegalNoticePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ContactPage from './pages/ContactPage';
-import CookieBanner from './components/CookieBanner';
 import Error from './pages/NotFound';
 import Home  from './components/Home';
 
@@ -23,13 +21,11 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
-              <Route path="/avis" element={<TestimonialsPage />} />
               <Route path="/mentions-legales" element={<LegalNoticePage />} />
               <Route path="/politique-de-confidentialite" element={<PrivacyPolicyPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<Error />} />
             </Routes>
-            <CookieBanner />
           </main>
           <Footer />
         </div>

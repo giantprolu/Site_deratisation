@@ -29,7 +29,7 @@ const NotFound = () => {
           
           <button
             onClick={() => navigate('/')}
-            className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors duration-200"
+            className="flex items-center px-6 py-3 bg-eco-green-600 text-white rounded-lg hover:bg-eco-green-700 transition-colors duration-200"
           >
             <Home size={20} className="mr-2" />
             Accueil
