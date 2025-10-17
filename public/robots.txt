@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://site-deratisation.vercel.app/sitemap.xml
+Sitemap: https://hygiene-protect-3d.fr/sitemap.xml
 
 # Interdire l'indexation des fichiers techniques
 Disallow: /src/

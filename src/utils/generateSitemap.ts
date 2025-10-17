@@ -1,7 +1,7 @@
 import { services } from '../data/services';
 
 export const generateSitemap = (): string => {
-  const baseUrl = 'https://site-deratisation.vercel.app';
+  const baseUrl = 'https://hygiene-protect-3d.fr';
   const currentDate = new Date().toISOString().split('T')[0];
   
   const staticPages = [

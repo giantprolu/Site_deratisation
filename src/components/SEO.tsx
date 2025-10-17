@@ -20,7 +20,7 @@ const SEO: React.FC<SEOProps> = ({
   image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
   keywords = 'dératisation Bondy, désinsectisation Île-de-France, désinfection 93, extermination nuisibles, dératisation Paris, punaises de lit, cafards, rats, souris, hygiène 3D, devis gratuit dératisation',
 }) => {
-  const siteUrl = "https://site-deratisation.vercel.app";
+  const siteUrl = "https://hygiene-protect-3d.fr";
   
   // Construire l'URL canonique correctement
   const canonicalUrl = canonical 

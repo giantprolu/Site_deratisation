@@ -16,7 +16,7 @@ const LegalNoticePage = () => {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <strong>https://site-deratisation.vercel.app</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+              Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <strong>https://hygiene-protect-3d.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
             </p>
 
             <section className="mb-8">
@@ -53,7 +53,7 @@ const LegalNoticePage = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Propriété intellectuelle</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Le site internet <strong>https://site-deratisation.vercel.app</strong> et chacun des éléments qui le composent, y compris mais sans s'y limiter, les textes, articles, descriptions de services, images, photographies, illustrations, graphismes, vidéos, animations, sons, logos, marques, chartes graphiques, logiciels, codes source, structure du site et mise en page, sont la propriété exclusive d'<strong>Hygiène Protect 3D</strong> ou sont utilisés avec l'autorisation expresse de leurs propriétaires respectifs.
+                Le site internet <strong>https://hygiene-protect-3d.fr</strong> et chacun des éléments qui le composent, y compris mais sans s'y limiter, les textes, articles, descriptions de services, images, photographies, illustrations, graphismes, vidéos, animations, sons, logos, marques, chartes graphiques, logiciels, codes source, structure du site et mise en page, sont la propriété exclusive d'<strong>Hygiène Protect 3D</strong> ou sont utilisés avec l'autorisation expresse de leurs propriétaires respectifs.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Toute reproduction, représentation, adaptation, traduction ou modification, partielle ou totale, de tout ou partie du site ou de l'un quelconque de ses éléments, par quelque procédé que ce soit (extraction, copie, téléchargement, impression, reproduction sur support physique ou numérique), est strictement interdite sans l'autorisation préalable écrite d'Hygiène Protect 3D, et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
@@ -106,7 +106,7 @@ const LegalNoticePage = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Cookies et traceurs</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Le site <strong>https://site-deratisation.vercel.app</strong> utilise des cookies et autres technologies de traçage pour améliorer l'expérience utilisateur et mesurer l'audience. Conformément aux recommandations de la CNIL, nous utilisons :
+                Le site <strong>https://hygiene-protect-3d.fr</strong> utilise des cookies et autres technologies de traçage pour améliorer l'expérience utilisateur et mesurer l'audience. Conformément aux recommandations de la CNIL, nous utilisons :
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
                 <li><strong>Cookies techniques essentiels</strong> : nécessaires au fonctionnement du site (navigation, sécurité)</li>
