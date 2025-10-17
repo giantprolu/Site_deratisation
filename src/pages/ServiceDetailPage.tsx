@@ -1,7 +1,8 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import ContactSidebar from '../components/ContactSidebar';
 import { services } from '../data/services';
-import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import InterventionProcess from '../components/InterventionProcess';
 
 const ServiceDetailPage = () => {
@@ -116,7 +117,7 @@ const ServiceDetailPage = () => {
                               src={equipment.image}
                               alt={equipment.imageAlt || equipment.name}
                               title={equipment.imageTitle || equipment.name}
-                              className="rounded-xl shadow-lg w-full h-48 object-cover"
+                              className="rounded-xl shadow-lg w-full h-auto max-h-80 object-contain bg-white"
                             />
                           </div>
                           <div className="md:col-span-2">
@@ -133,74 +134,26 @@ const ServiceDetailPage = () => {
 
             {/* Right Column - Sidebar */}
             <div className="lg:col-span-1">
-              <div className="sticky top-24 space-y-6">
-                {/* CTA Contact */}
-                <div className="bg-gradient-to-br from-primary-600 to-primary-dark text-white p-8 rounded-2xl shadow-xl">
-                  <h3 className="text-2xl font-bold mb-4">Besoin de ce service ?</h3>
-                  <p className="mb-6 opacity-90">
-                    Contactez-nous pour un devis gratuit et personnalisé adapté à vos besoins.
-                  </p>
-                  <Link
-                    to="/contact"
-                    className="block w-full bg-white text-primary-600 text-center py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-colors mb-3"
-                  >
-                    Demander un devis
-                  </Link>
-                  <a
-                    href="tel:+33123456789"
-                    className="flex items-center justify-center w-full bg-primary-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-900 transition-colors"
-                  >
-                    <Phone className="h-5 w-5 mr-2" />
-                    Appel d'urgence
-                  </a>
-                </div>
+              <ContactSidebar />
 
-                {/* Points clés */}
-                <div className="bg-white border-2 border-primary-100 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Points clés</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-center text-gray-700">
-                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
-                      Intervention rapide 24h/7j
-                    </li>
-                    <li className="flex items-center text-gray-700">
-                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
-                      Techniciens certifiés
-                    </li>
-                    <li className="flex items-center text-gray-700">
-                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
-                      Produits éco-responsables
-                    </li>
-                    <li className="flex items-center text-gray-700">
-                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
-                      Garantie de résultat
-                    </li>
-                    <li className="flex items-center text-gray-700">
-                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
-                      Devis gratuit
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Autres services */}
-                <div className="bg-blue-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Autres services</h3>
-                  <ul className="space-y-2">
-                    {services
-                      .filter(s => s.id !== service.id)
-                      .slice(0, 4)
-                      .map(otherService => (
-                        <li key={otherService.id}>
-                          <Link
-                            to={`/services/${otherService.slug}`}
-                            className="text-primary-600 hover:text-primary-dark hover:underline transition-colors"
-                          >
-                            {otherService.title}
-                          </Link>
-                        </li>
-                      ))}
-                  </ul>
-                </div>
+              {/* Autres services */}
+              <div className="bg-blue-50 p-6 rounded-2xl mt-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Autres services</h3>
+                <ul className="space-y-2">
+                  {services
+                    .filter(s => s.id !== service.id)
+                    .slice(0, 4)
+                    .map(otherService => (
+                      <li key={otherService.id}>
+                        <Link
+                          to={`/services/${otherService.slug}`}
+                          className="text-primary-600 hover:text-primary-dark hover:underline transition-colors"
+                        >
+                          {otherService.title}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
               </div>
             </div>
           </div>

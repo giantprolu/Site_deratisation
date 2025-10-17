@@ -14,19 +14,21 @@ const Services = () => {
         title="Nos Services"
         description="Découvrez nos services professionnels de dératisation, désinsectisation, désinfection et plus encore. Hygiène Protect 3D, votre partenaire en hygiène écoresponsable."
       />
-      <section id="services" className="py-20 bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-600 rounded-full text-sm font-medium mb-4">
+      <section id="services" className="section section-gradient-primary">
+        <div className="section-container">
+          {/* Header Section */}
+          <div className="section-header">
+            <div className="badge badge-primary">
               Nos expertises
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Nos Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="section-title">Nos Services</h2>
+            <p className="section-subtitle">
               Solutions complètes et écoresponsables adaptées à vos besoins
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Services Grid - Amélioration responsive */}
+          <div className="grid-services">
             {services.map(service => {
               const IconComponent = service.icon;
               return (
@@ -34,21 +36,35 @@ const Services = () => {
                   key={service.id}
                   to={`/services/${service.slug}`}
                   onClick={handleClick}
-                  className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-primary-200"
+                  className="group service-card"
                 >
-                  <div className="p-8">
-                    <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-                      <IconComponent className="h-8 w-8 text-primary-600 group-hover:text-white transition-colors duration-300" />
+                  {/* Header avec icône et gradient */}
+                  <div className="service-card-header">
+                    <div className="bg-decoration-card group-hover:bg-primary-300/30"></div>
+                    <div className="relative">
+                      <div className="icon-card group-hover:shadow-xl group-hover:scale-110">
+                        <IconComponent className="icon-lg text-primary-600 group-hover:text-primary-700 transition-colors duration-500" />
+                      </div>
+                      <h3 className="heading-card text-clamp-2 text-min-height-sm group-hover:text-primary-600">
+                        {service.title}
+                      </h3>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                  </div>
+
+                  {/* Contenu de la carte */}
+                  <div className="service-card-body">
+                    <p className="text-description-sm text-clamp-3 flex-grow">
                       {service.description}
                     </p>
-                    <div className="flex items-center text-primary-600 font-medium group-hover:gap-2 transition-all duration-300">
-                      <span>En savoir plus</span>
-                      <ArrowRight className="h-4 w-4 ml-1 group-hover:ml-0 group-hover:translate-x-1 transition-all duration-300" />
+
+                    {/* Call to Action */}
+                    <div className="service-card-footer">
+                      <div className="btn-cta group-hover:text-primary-700">
+                        <span className="text-responsive-base">En savoir plus</span>
+                        <div className="btn-icon-circle group-hover:bg-primary-600">
+                          <ArrowRight className="icon-md group-hover:text-white group-hover:translate-x-1" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -56,13 +72,11 @@ const Services = () => {
             })}
           </div>
 
-          <div className="mt-16 text-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 text-lg font-medium text-white bg-primary-600 hover:bg-primary-dark rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Demander un devis gratuit
-              <ArrowRight className="h-5 w-5" />
+          {/* CTA Section */}
+          <div className="mt-12 sm:mt-16 text-center">
+            <a href="#contact" className="btn-primary">
+              <span>Demander un devis gratuit</span>
+              <ArrowRight className="icon-md" />
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Bug, Rat, Bird, Sparkles, BoxesIcon, Fan, HardHat } from 'lucide-react';
+import { Building2, Bug, Rat, Bird, Sparkles, BoxesIcon, HardHat } from 'lucide-react';
 
 export interface Service {
   id: string;
@@ -27,7 +27,7 @@ export interface Service {
 export const services: Service[] = [
   {
     id: '1',
-    title: 'Dératisation Professionnelle à Paris',
+    title: 'Dératisation',
     slug: 'deratisation',
     description: 'Expert en dératisation à Paris et Île-de-France. Élimination rapide et garantie des rats, souris et rongeurs nuisibles. Solutions professionnelles certifiées pour particuliers, entreprises, restaurants et commerces. Intervention d\'urgence 24h/7j avec techniciens diplômés.',
     fullDescription: `Notre service professionnel de dératisation à Paris et en région parisienne offre une protection complète contre toutes les infestations de rongeurs urbains (rats noirs, rats d'égout, souris domestiques, mulots). Spécialistes certifiés de la lutte antiparasitaire en milieu urbain dense, nous intervenons rapidement dans tous les arrondissements de Paris et en Île-de-France chez les particuliers, entreprises, restaurants, hôtels, commerces alimentaires, copropriétés et collectivités. Nos techniciens diplômés Certibiocide utilisent des méthodes éprouvées et des rodenticides professionnels homologués, respectueux de l'environnement et conformes aux normes sanitaires strictes. Nous garantissons une élimination durable et définitive des rongeurs grâce à une approche globale associant diagnostic précis, traitement curatif ciblé et prévention long terme. Discrétion assurée et conformité HACCP pour les professionnels de la restauration.`,
@@ -79,29 +79,15 @@ export const services: Service[] = [
       {
         name: 'Postes d\'Appâtage Sécurisés Nouvelle Génération',
         description: 'Stations d\'appâtage professionnelles ultra-sécurisées avec système de verrouillage à clé inviolable, spécialement conçues pour les environnements urbains parisiens. Ces boîtiers robustes en plastique haute densité anti-UV protègent les rodenticides des intempéries et empêchent tout accès accidentel (enfants, animaux domestiques, oiseaux). Équipés de compartiments à appâts et de pièges mécaniques intégrés. Traçabilité optimale avec système de numérotation pour suivi GPS. Conformes aux normes européennes de sécurité biocides. Essentiels pour une dératisation responsable et efficace en milieu urbain dense.',
-        image: '/images/deratisation.webp',
-        imageAlt: 'Poste d\'appâtage sécurisé professionnel pour dératisation Paris avec verrouillage certifié',
-        imageTitle: 'Station appâtage anti-rats Paris - Équipement sécurisé certifié pour milieu urbain'
-      },
-      {
-        name: 'Pièges Mécaniques Professionnels Sans Toxique',
-        description: 'Gamme complète de pièges mécaniques nouvelle génération pour capture sans poison : pièges à ressort haute performance, nasses métalliques multi-captures, pièges électroniques à détection infrarouge. Solutions alternatives écologiques privilégiées pour les zones sensibles parisiennes (écoles, crèches, hôpitaux, cuisines professionnelles). Installation stratégique le long des chemins de passage identifiés. Réarmement et vidage lors de chaque visite de contrôle. Respectueux de l\'environnement urbain et conformes aux exigences HACCP pour le secteur alimentaire.',
-        image: '/images/deratisation.webp',
-        imageAlt: 'Pièges mécaniques professionnels sans toxique pour capture de rongeurs Paris',
-        imageTitle: 'Pièges anti-rats écologiques Paris - Capture sans poison certifiée professionnels'
-      },
-      {
-        name: 'Équipements de Détection et Monitoring Connectés',
-        description: 'Technologie de pointe pour surveillance continue des rongeurs : détecteurs de mouvement à capteurs infrarouges, caméras thermiques portables pour repérage dans les zones obscures (caves, sous-sols parisiens), systèmes de monitoring connectés avec alertes en temps réel. Poudre de tracking fluorescente pour visualiser les déplacements sous lumière UV. Kit d\'inspection complet avec lampe torche LED haute puissance, miroir télescopique, endoscope flexible pour gaines techniques. Ces outils professionnels permettent un diagnostic précis et un suivi rigoureux de l\'efficacité du traitement.',
-        image: '/images/deratisation.webp',
-        imageAlt: 'Équipements de détection professionnels pour surveillance rongeurs Paris',
-        imageTitle: 'Système monitoring anti-rats Paris - Détection connectée professionnelle'
+        image: '/images/deratisation-postes-appats.webp',
+        imageAlt: 'Postes d\'appâtage sécurisés professionnels avec rodenticides pour dératisation Paris',
+        imageTitle: 'Station appâtage anti-rats Paris - Équipement sécurisé certifié avec Brodifacoum'
       }
     ]
   },
   {
     id: '2',
-    title: 'Désinfection Professionnelle à Paris',
+    title: 'Désinfection',
     slug: 'desinfection',
     description: 'Service professionnel de désinfection à Paris et Île-de-France. Élimination totale des bactéries, virus et parasites après infestation. Traitement complet des surfaces et de l\'air pour un environnement sain et sécurisé. Intervention rapide avec produits certifiés.',
     fullDescription: 'Notre service de désinfection professionnelle garantit un assainissement complet de vos locaux à Paris et en région parisienne. Après une infestation de nuisibles (rongeurs, insectes) ou en prévention, nous intervenons avec des protocoles rigoureux pour éliminer tous les agents pathogènes : bactéries, virus, champignons et parasites. Nous utilisons des produits biocides professionnels homologués par l\'ANSM et des techniques de nébulisation avancées pour traiter l\'ensemble des surfaces et volumes. Nos interventions respectent scrupuleusement les normes d\'hygiène HACCP et les protocoles sanitaires les plus stricts. Adaptées aux particuliers, professionnels de santé, restaurateurs, hôteliers et entreprises, nos prestations incluent la décontamination complète, le traitement de l\'air et la certification de salubrité.',
@@ -153,21 +139,21 @@ export const services: Service[] = [
       {
         name: 'Nébulisateurs Professionnels ULV',
         description: 'Équipements de nébulisation à froid dernière génération pour une diffusion optimale des produits désinfectants. Ces appareils ULV (Ultra Low Volume) produisent un brouillard ultra-fin qui atteint tous les recoins, surfaces et volumes. Idéals pour la désinfection complète de grands espaces, bureaux, restaurants, hôtels et locaux commerciaux. Efficacité maximale avec une consommation minimale de produits.',
-        image: '/images/desinfection.webp',
+        image: '/images/NébulisateursProfessionnelsULV.webp',
         imageAlt: 'Nébulisateur professionnel ULV pour désinfection complète des locaux',
         imageTitle: 'Équipement de nébulisation professionnelle - Désinfection totale Paris'
       },
       {
         name: 'Produits Biocides Certifiés',
         description: 'Gamme complète de désinfectants professionnels homologués par l\'ANSM : virucides (efficaces contre coronavirus), bactéricides, fongicides et sporicides. Produits aux normes EN 14476, EN 1276 et EN 13697, adaptés aux secteurs alimentaire, médical et industriel. Solutions écologiques disponibles pour les environnements sensibles. Traçabilité complète avec fiches de données de sécurité.',
-        image: '/images/desinfection.webp',
+        image: '/images/ProduitsBiocidesCertifies.webp',
         imageAlt: 'Produits désinfectants professionnels certifiés pour assainissement',
         imageTitle: 'Biocides professionnels homologués - Désinfection certifiée Paris'
       },
       {
         name: 'Équipements de Protection Intégrale',
         description: 'Tenues de protection complètes pour interventions en zones contaminées : combinaisons jetables étanches, masques respiratoires FFP3, lunettes de protection, gants nitrile professionnels et sur-chaussures. Équipements conformes aux normes européennes EN 14126 pour la protection contre les agents infectieux. Sécurité maximale de nos techniciens et de vos occupants pendant et après l\'intervention.',
-        image: '/images/desinfection.webp',
+        image: '/images/technicien-frelons-exterieur.webp',
         imageAlt: 'Équipement de protection individuelle complet pour désinfection',
         imageTitle: 'EPI professionnel désinfection - Protection maximale techniciens Paris'
       }
@@ -175,7 +161,7 @@ export const services: Service[] = [
   },
   {
     id: '3',
-    title: 'Désinsectisation Professionnelle à Paris',
+    title: 'Désinsectisation',
     slug: 'desinsectisation',
     description: 'Expert en désinsectisation à Paris et Île-de-France. Élimination définitive des cafards, punaises de lit, frelons asiatiques, guêpes, fourmis, mites et tous insectes nuisibles. Traitement garanti avec produits professionnels homologués. Intervention rapide particuliers et entreprises.',
     fullDescription: 'Notre service professionnel de désinsectisation à Paris offre une protection complète contre tous les types d\'insectes nuisibles et rampants. Spécialistes certifiés des infestations urbaines, nous intervenons rapidement contre les cafards (blattes germaniques et orientales), punaises de lit, frelons asiatiques, guêpes, frelons européens, fourmis, mites alimentaires et textiles, puces, araignées, poissons d\'argent et autres nuisibles. Nos techniciens diplômés Certibiocide utilisent des insecticides professionnels de dernière génération, respectueux de l\'environnement et conformes aux réglementations. Nous adaptons nos méthodes à chaque situation : pulvérisation, fumigation, gel appât, pièges à phéromones, traitement thermique pour les punaises de lit. Interventions garanties pour particuliers, restaurants, hôtels, commerces alimentaires, bureaux et copropriétés dans tout Paris et la région parisienne.',
@@ -227,29 +213,22 @@ export const services: Service[] = [
       {
         name: 'Pulvérisateurs Professionnels Haute Pression',
         description: 'Équipements de pulvérisation professionnels pour application précise des insecticides sur toutes surfaces. Nos pulvérisateurs haute pression permettent de traiter efficacement les zones difficiles d\'accès, fissures, plinthes et recoins où se cachent les insectes. Buses réglables pour adapter le débit et la diffusion selon les besoins. Cuves en matériaux résistants aux produits chimiques pour une utilisation durable et sécurisée.',
-        image: '/images/désinsectisation.webp',
+        image: '/images/PulverisateursProfessionnelsHautePression.webp',
         imageAlt: 'Pulvérisateur professionnel haute pression pour traitement anti-insectes',
         imageTitle: 'Équipement pulvérisation insecticide - Désinsectisation professionnelle Paris'
       },
       {
         name: 'Insecticides Biocides Certifiés',
         description: 'Gamme complète d\'insecticides professionnels homologués à action rémanente prolongée. Produits spécifiques pour chaque type d\'insecte : anti-cafards, anti-punaises de lit, anti-fourmis, anti-guêpes. Formulations en gel appât, liquide de pulvérisation, poudre insecticide et fumigène. Efficacité prouvée avec action choc et protection longue durée. Produits respectueux de l\'environnement conformes aux normes européennes et utilisables en présence alimentaire après séchage.',
-        image: '/images/désinsectisation.webp',
+        image: '/images/ProduitsBiocidesCertifies.webp',
         imageAlt: 'Produits insecticides professionnels certifiés pour désinsectisation',
         imageTitle: 'Biocides anti-insectes certifiés - Traitement professionnel Paris'
-      },
-      {
-        name: 'Détecteurs et Pièges à Monitoring',
-        description: 'Dispositifs de détection précoce et de surveillance continue des insectes. Pièges à phéromones pour mites et autres nuisibles, plaques de glu professionnelles, détecteurs de mouvement infrarouges pour identification des zones d\'activité. Ces équipements permettent un suivi précis de l\'infestation, l\'évaluation de l\'efficacité des traitements et la détection rapide de toute réapparition. Essentiels pour le monitoring HACCP dans les secteurs alimentaires et la prévention durable.',
-        image: '/images/désinsectisation.webp',
-        imageAlt: 'Détecteurs de présence et pièges de monitoring pour insectes',
-        imageTitle: 'Système de détection insectes - Monitoring professionnel Paris'
       }
     ]
   },
   {
     id: '4',
-    title: 'Nids de Guêpes et Frelons - Interventions en Hauteur',
+    title: 'Nids de Guêpes et Frelons',
     slug: 'guepes-frelons-hauteur',
     description: 'Spécialistes de la destruction de nids de guêpes et frelons asiatiques en hauteur à Paris et Île-de-France. Interventions sécurisées sur toitures, arbres, façades, cheminées, combles. Équipes formées aux travaux en hauteur avec certification Certibiocide. Matériel professionnel : nacelles, harnais, perches télescopiques.',
     fullDescription: 'Notre service spécialisé dans la destruction de nids de guêpes et frelons en hauteur garantit des interventions sécurisées et efficaces. Nos équipes sont formées aux travaux en hauteur et disposent de la certification Certibiocide, garantissant des interventions sûres et conformes aux normes sanitaires. Nous intervenons sur toutes les zones difficiles d\'accès : toitures, arbres de grande hauteur, façades d\'immeubles, cheminées, combles, corniches, gouttières et volets roulants. Notre expertise spécifique des frelons asiatiques nous permet d\'assurer une localisation rapide des nids (parfois à plus de 10 mètres de hauteur) et d\'appliquer des techniques adaptées à cette espèce invasive, tant en préventif qu\'en curatif. Nous utilisons du matériel professionnel haute performance : nacelles élévatrices, harnais antichute et EPI complets, perches télescopiques, lances à injection longue portée, systèmes d\'ancrage et méthodes d\'accès par corde (type cordiste).',
@@ -279,7 +258,7 @@ export const services: Service[] = [
       'Intervention rapide et efficace avec matériel adapté',
       'Respect des normes de sécurité et protocoles sanitaires'
     ],
-    image: '/images/RucheArbre.webp',
+    image: '/images/nid-frelons-arbre-hauteur.webp',
     interventionSteps: [
       {
         icon: "https://img.icons8.com/ios/50/search.png",
@@ -301,29 +280,22 @@ export const services: Service[] = [
       {
         name: 'Nacelles Élévatrices Professionnelles',
         description: 'Nacelles automotrices de 12 à 25 mètres de hauteur pour accéder en toute sécurité aux nids situés sur les toitures, façades et arbres de grande hauteur. Stabilisateurs automatiques et commandes précises pour un positionnement optimal. Conformes aux normes de sécurité pour travaux en hauteur. Permettent d\'intervenir efficacement sur les nids de frelons asiatiques souvent situés à plus de 10 mètres du sol.',
-        image: '/images/RucheArbre.webp',
-        imageAlt: 'Nacelle élévatrice professionnelle pour intervention anti-frelons en hauteur',
-        imageTitle: 'Nacelle élévatrice Paris - Équipement professionnel destruction nids hauteur'
-      },
-      {
-        name: 'Équipements de Protection et Travail en Hauteur',
-        description: 'Harnais antichute certifiés EN 361, longes avec absorbeur d\'énergie, casques de protection, cordes et mousquetons professionnels, systèmes d\'ancrage mobiles et fixes. Combinaisons de protection intégrale anti-piqûres spéciales frelons asiatiques. Gants renforcés, masques respiratoires. Équipements conformes aux normes européennes pour garantir la sécurité maximale de nos techniciens cordistes lors des interventions en hauteur.',
-        image: '/images/guepesMort.webp',
-        imageAlt: 'Équipements de protection EPI et harnais antichute pour travaux en hauteur',
-        imageTitle: 'EPI travaux hauteur Paris - Protection complète intervention frelons'
+        image: '/images/NacellesElevatricesProfessionnelles.webp',
+        imageAlt: 'Nid de frelons asiatiques en hauteur dans un arbre nécessitant intervention nacelle',
+        imageTitle: 'Nid frelons hauteur Paris - Intervention professionnelle avec nacelle élévatrice'
       },
       {
         name: 'Perches Télescopiques et Lances à Injection',
         description: 'Perches télescopiques professionnelles extensibles de 3 à 12 mètres pour traiter les nids sans approche directe. Lances à injection longue portée avec système de pulvérisation haute pression pour application précise des biocides au cœur du nid. Embouts adaptés aux différentes configurations. Permettent un traitement efficace tout en maintenant une distance de sécurité. Matériaux légers en fibre de carbone ou aluminium pour manipulation aisée en hauteur.',
-        image: '/images/RucheArbre.webp',
-        imageAlt: 'Perches télescopiques et lances à injection pour destruction nids frelons',
-        imageTitle: 'Perches télescopiques Paris - Matériel professionnel traitement nids hauteur'
+        image: '/images/technicien-lance-telescopique.webp',
+        imageAlt: 'Technicien utilisant lance télescopique professionnelle pour destruction nid frelons',
+        imageTitle: 'Perches télescopiques Paris - Intervention professionnelle anti-frelons longue portée'
       }
     ]
   },
   {
     id: '5',
-    title: 'Dépigeonnage Professionnel à Paris',
+    title: 'Dépigeonnage',
     slug: 'depigeonnage',
     description: 'Spécialiste du dépigeonnage à Paris et Île-de-France. Solutions durables contre les pigeons et volatiles nuisibles. Installation de pics anti-pigeons, filets de protection, répulsifs ultrasoniques. Protection des façades, balcons, toitures. Intervention certifiée immeubles et monuments.',
     fullDescription: 'Notre service professionnel de dépigeonnage à Paris protège efficacement vos bâtiments contre les nuisances et dégradations causées par les pigeons et autres volatiles. Les pigeons urbains représentent un véritable fléau pour les immeubles parisiens : leurs fientes corrosives attaquent les façades, leurs nids obstruent les gouttières, et leurs parasites menacent la santé publique. Experts en effarouchement d\'oiseaux, nous proposons des solutions éthiques, durables et conformes à la réglementation sur la protection animale. Nos méthodes incluent l\'installation de pics anti-pigeons en acier inoxydable, la pose de filets de protection discrets, les systèmes répulsifs à ultrasons et les fils tendus. Nous intervenons sur tous types de bâtiments : immeubles résidentiels, monuments historiques, bâtiments industriels, commerces, hôtels, églises. Service complet incluant le nettoyage et la désinfection des zones souillées par les fientes.',
@@ -375,29 +347,22 @@ export const services: Service[] = [
       {
         name: 'Pics Anti-Pigeons en Acier Inoxydable',
         description: 'Systèmes de picots professionnels en acier inoxydable 316 pour empêcher définitivement les pigeons de se poser. Disponibles en différentes largeurs et configurations pour s\'adapter à tous les supports : rebords de fenêtres, corniches, gouttières, enseignes, climatiseurs. Installation sur base polycarbonate UV-résistante collée ou vissée. Discrets, durables (garantie 10 ans), résistants aux intempéries et conformes aux réglementations urbaines. Solution la plus efficace et la plus économique à long terme.',
-        image: '/images/dépigeonnage.webp',
+        image: '/images/PicsAnti-PigeonsenAcierInoxydable.webp',
         imageAlt: 'Pics anti-pigeons professionnels en acier inoxydable pour façades',
         imageTitle: 'Pics anti-pigeons Paris - Protection durable façades et rebords'
       },
       {
         name: 'Filets de Protection Anti-Volatiles',
         description: 'Filets professionnels haute résistance en polyéthylène traité anti-UV pour protéger balcons, coursives, patios et grandes surfaces. Mailles adaptées (50mm ou 75mm) pour bloquer pigeons et mouettes tout en restant discrets. Installation sur câbles périmétriques en acier inoxydable avec fixations murales certifiées. Résistants aux intempéries, aux UV et au feu (classement M2). Respectent l\'esthétique des bâtiments parisiens, même classés monuments historiques. Durée de vie exceptionnelle de 15 à 20 ans.',
-        image: '/images/dépigeonnage.webp',
+        image: '/images/FiletsdeProtectionAnti-Volatiles.webp',
         imageAlt: 'Filets de protection anti-pigeons pour balcons et façades',
         imageTitle: 'Filets anti-volatiles Paris - Protection invisible et durable'
-      },
-      {
-        name: 'Répulsifs Ultrasoniques Professionnels',
-        description: 'Dispositifs d\'effarouchement à ultrasons de haute technologie pour éloigner les pigeons sans nuisance pour les humains. Émission d\'ondes sonores variables et imprévisibles perturbant l\'installation des volatiles. Rayon d\'action jusqu\'à 200m², réglables en intensité et fréquence. Alimentation secteur ou solaire pour zones difficiles d\'accès. Résistants aux intempéries (IP65), discrets et respectueux du bien-être animal. Idéaux pour toitures-terrasses, cours intérieures et zones sensibles où les pics ne peuvent être installés.',
-        image: '/images/dépigeonnage.webp',
-        imageAlt: 'Système répulsif ultrasonique professionnel anti-pigeons',
-        imageTitle: 'Répulsif ultrasons pigeons Paris - Effarouchement éthique et efficace'
       }
     ]
   },
   {
     id: '6',
-    title: 'Hygiène du Bâtiment à Paris',
+    title: 'Hygiène du Bâtiment',
     slug: 'hygiene-du-batiment',
     description: 'Services professionnels d\'hygiène et d\'entretien pour bâtiments à Paris. Nettoyage, désinfection, désodorisation des locaux professionnels et résidentiels. Protocoles HACCP pour restaurants et commerces alimentaires. Audits d\'hygiène et mise aux normes sanitaires.',
     fullDescription: 'Notre service d\'hygiène du bâtiment à Paris garantit un environnement sain, propre et conforme aux normes sanitaires les plus strictes. Nous intervenons auprès des entreprises, commerces, restaurants, hôtels, établissements de santé, copropriétés et particuliers pour maintenir des locaux irréprochables. Nos prestations incluent le nettoyage professionnel approfondi, la désinfection régulière des surfaces et équipements, la désodorisation, le traitement des sols et des sanitaires. Nous mettons en place des protocoles d\'hygiène personnalisés conformes aux normes HACCP pour les secteurs alimentaires, et aux réglementations sanitaires pour les établissements recevant du public. Nos équipes formées utilisent des produits professionnels écologiques certifiés Ecolabel. Service sur-mesure avec planning d\'intervention adapté à votre activité pour ne pas perturber votre fonctionnement.',
@@ -449,21 +414,21 @@ export const services: Service[] = [
       {
         name: 'Matériel de Nettoyage Professionnel',
         description: 'Équipements de nettoyage professionnels dernière génération pour une efficacité optimale : autolaveuses pour grands espaces, mono-brosses pour traitement des sols, aspirateurs HEPA professionnels, nettoyeurs vapeur haute pression pour désinfection écologique sans produits chimiques. Chariots de ménage complets équipés de tous les accessoires nécessaires. Matériel ergonomique pour la sécurité et le confort de nos agents d\'hygiène.',
-        image: '/images/hygienedubat.webp',
+        image: '/images/MatérieldeNettoyageProfessionnel.webp',
         imageAlt: 'Équipement de nettoyage professionnel pour entretien hygiène bâtiments',
         imageTitle: 'Matériel nettoyage professionnel Paris - Équipements haute performance'
       },
       {
         name: 'Produits d\'Entretien Écologiques Certifiés',
         description: 'Gamme complète de produits d\'entretien professionnels écologiques certifiés Ecolabel : détergents multi-surfaces biodégradables, désinfectants bactéricides sans javel, dégraissants alimentaires, détartrants sanitaires, produits de traitement des sols. Formulations concentrées économiques et efficaces, sans danger pour l\'utilisateur et l\'environnement. Conformes aux normes de sécurité alimentaire pour utilisation en zones HACCP.',
-        image: '/images/hygienedubat.webp',
+        image: '/images/ProduitsBiocidesCertifies.webp',
         imageAlt: 'Produits d\'entretien écologiques professionnels certifiés',
         imageTitle: 'Produits nettoyage écologiques Paris - Certifiés Ecolabel professionnels'
       },
       {
         name: 'Systèmes de Traçabilité et Contrôle Qualité',
         description: 'Outils digitaux de traçabilité pour documenter et garantir la qualité de nos interventions : planning d\'intervention digitalisé, check-lists de contrôle qualité, relevés de température pour zones réfrigérées, rapports d\'intervention détaillés avec photos avant/après. Certificats de conformité sanitaire pour vos audits et contrôles officiels. Tableau de bord en ligne pour suivre l\'historique des prestations et planifier les interventions futures.',
-        image: '/images/hygienedubat.webp',
+        image: '/images/SystèmesdeTraçabilitéetContrôleQualité.webp',
         imageAlt: 'Système de traçabilité digitale pour contrôle qualité hygiène',
         imageTitle: 'Traçabilité hygiène Paris - Reporting et certification qualité digitale'
       }
@@ -471,7 +436,7 @@ export const services: Service[] = [
   },
   {
     id: '7',
-    title: 'Débarras Post-Mortem à Paris',
+    title: 'Débarras Post-Mortem',
     slug: 'debarras-pro',
     description: 'Service de débarras professionnel et post-mortem à Paris et Île-de-France. Évacuation rapide et discrète de locaux, appartements. Tri sélectif, recyclage, nettoyage complet. Intervention spécialisée pour entreprises, particuliers, successions. Devis gratuit et tarifs transparents.',
     fullDescription: 'Notre service de débarras professionnel et post-mortem à Paris prend en charge l\'évacuation complète de tous types de locaux dans des situations délicates. Spécialement formées pour le débarras post-mortem, nos équipes interviennent dans le strict respect des protocoles sanitaires, avec discrétion, efficacité et professionnalisme, garantissant un assainissement complet des lieux. Que ce soit pour vider un appartement après succession, débarrasser des locaux insalubres, évacuer des bureaux, caves ou greniers, nous intervenons rapidement avec une équipe expérimentée et équipée. Nous assurons le tri sélectif des objets et déchets : valorisation et don des objets réutilisables, recyclage des matériaux, évacuation conforme des déchets dangereux. Service complet incluant le démontage du mobilier, le nettoyage après débarras, et la remise en état des lieux.',
@@ -523,97 +488,16 @@ export const services: Service[] = [
       {
         name: 'Véhicules et Camions de Débarras',
         description: 'Flotte de véhicules adaptés à tous types de débarras : camions de 20m³ à 40m³ pour les gros volumes, camionnettes pour les accès difficiles dans Paris, monte-meubles pour les étages sans ascenseur. Équipements de protection pour les véhicules et les lieux (bâches, protections de sol et murs). Personnel qualifié pour le portage et la manutention en toute sécurité, même dans les escaliers étroits typiques des immeubles parisiens.',
-        image: '/images/debarras.webp',
+        image: '/images/VéhiculesetCamionsdeDébarras.webp',
         imageAlt: 'Camion de débarras professionnel pour évacuation de locaux à Paris',
         imageTitle: 'Véhicules débarras Paris - Camions équipés pour évacuation rapide'
       },
       {
-        name: 'Équipements de Manutention Professionnels',
-        description: 'Matériel professionnel pour faciliter le débarras en toute sécurité : diables et transpalettes pour objets lourds, sangles et harnais de portage, caisses et bacs de tri, cartons renforcés, sacs à gravats résistants. Équipements de protection individuelle pour nos équipes. Outils de démontage pour mobilier et installations fixes. Monte-charge et élévateurs pour accès difficiles ou volumes importants.',
-        image: '/images/debarras.webp',
-        imageAlt: 'Équipements de manutention professionnels pour débarras',
-        imageTitle: 'Matériel manutention Paris - Équipements professionnels débarras'
-      },
-      {
         name: 'Système de Tri et Traçabilité des Déchets',
         description: 'Organisation professionnelle du tri sélectif avec contenants spécifiques par catégorie : bois, métaux, plastiques, cartons, textiles, verre, déchets dangereux, DEEE. Partenariats avec déchetteries agréées, centres de tri, associations caritatives et structures de réemploi. Documentation complète avec bordereaux de suivi des déchets (BSD), certificats d\'élimination, justificatifs de don. Respect total de la réglementation environnementale et des filières REP (Responsabilité Élargie des Producteurs).',
-        image: '/images/debarras.webp',
+        image: '/images/SystèmedeTrietTraçabilitédesDéchets.webp',
         imageAlt: 'Système de tri sélectif et traçabilité des déchets de débarras',
         imageTitle: 'Tri sélectif débarras Paris - Traçabilité et recyclage conformes'
-      }
-    ]
-  },
-  {
-    id: '8',
-    title: 'Assainissement à Paris',
-    slug: 'assainissement-vmc',
-    description: 'Service professionnel d\'assainissement et entretien à Paris. Nettoyage, désinfection et maintenance des systèmes de ventilation. Inspection vidéo, décontamination des gaines, amélioration de la qualité de l\'air intérieur. Conformité réglementaire garantie.',
-    fullDescription: 'Notre service d\'assainissement à Paris garantit la qualité de l\'air intérieur et le bon fonctionnement de vos systèmes de ventilation. Les réseaux de ventilation mal entretenus accumulent poussières, moisissures, bactéries et allergènes, dégradant la qualité de l\'air et favorisant les problèmes respiratoires. Nous intervenons sur tous types de systèmes : VMC simple flux, VMC double flux, VMC hygroréglable, ventilation par extraction, centrales de traitement d\'air (CTA). Nos prestations incluent l\'inspection vidéo endoscopique des gaines, le nettoyage mécanique et aspiration des conduits, la désinfection antibactérienne des réseaux, le remplacement des filtres, le contrôle des débits d\'air et le réglage des installations. Service essentiel pour la santé, obligatoire pour les ERP (Établissements Recevant du Public) et fortement recommandé pour les bureaux, commerces, restaurants et habitations collectives.',
-    icon: Fan,
-    metaDescription: 'Assainissement Paris - Nettoyage et désinfection ventilation. Inspection vidéo, maintenance système. Qualité air intérieur. Devis gratuit Île-de-France.',
-    imageAlt: 'Technicien effectuant l\'assainissement et le nettoyage d\'un système à Paris',
-    imageTitle: 'Assainissement Paris - Entretien professionnel ventilation et qualité air',
-    features: [
-      'Inspection vidéo endoscopique complète des réseaux de ventilation',
-      'Nettoyage mécanique approfondi des gaines et conduits d\'air',
-      'Aspiration haute puissance des poussières, suies et résidus accumulés',
-      'Désinfection antibactérienne et antivirale des circuits de ventilation',
-      'Remplacement des filtres encrassés par des filtres neufs haute efficacité',
-      'Contrôle et mesure des débits d\'air pour vérifier la conformité',
-      'Réglage et optimisation des installations pour performances maximales',
-      'Détection et réparation des fuites et dysfonctionnements',
-      'Maintenance préventive programmée pour éviter l\'encrassement',
-      'Certification de conformité réglementaire pour contrôles officiels'
-    ],
-    benefits: [
-      'Amélioration significative de la qualité de l\'air intérieur',
-      'Réduction des allergies, asthme et problèmes respiratoires',
-      'Économies d\'énergie jusqu\'à 30% grâce à l\'optimisation du système',
-      'Conformité aux réglementations sanitaires et obligations légales (ERP)',
-      'Performance optimale et durée de vie prolongée de votre',
-      'Élimination des odeurs désagréables et des moisissures',
-      'Prévention des risques d\'incendie liés à l\'accumulation de poussières',
-      'Traçabilité complète avec rapports d\'intervention et certificats de conformité'
-    ],
-    image: '/images/assainissement.webp',
-    interventionSteps: [
-      {
-        icon: "https://img.icons8.com/ios/50/video-camera.png",
-        title: 'Inspection Vidéo',
-        description: 'Inspection endoscopique complète des réseaux de ventilation avec caméra haute définition. Identification de l\'encrassement, détection des anomalies, évaluation de l\'état général et localisation précise des zones à traiter.'
-      },
-      {
-        icon: "https://img.icons8.com/ios/50/broom.png",
-        title: 'Nettoyage & Désinfection',
-        description: 'Nettoyage mécanique approfondi avec brossage rotatif, aspiration haute puissance des résidus, pulvérisation de désinfectants antibactériens dans les conduits. Remplacement des filtres et nettoyage des bouches d\'extraction.'
-      },
-      {
-        icon: "https://img.icons8.com/ios/50/speed.png",
-        title: 'Contrôle & Optimisation',
-        description: 'Mesure des débits d\'air avec anémomètre, vérification de la conformité aux normes, réglage des ventilateurs, optimisation des performances. Remise d\'un rapport détaillé avec certificat de conformité.'
-      }
-    ],
-    equipments: [
-      {
-        name: 'Caméras d\'Inspection Endoscopique',
-        description: 'Caméras vidéo endoscopiques professionnelles haute définition avec éclairage LED intégré pour l\'inspection des réseaux de ventilation. Têtes rotatives à 360° pour visualiser l\'intérieur des gaines, même dans les coudes et zones difficiles d\'accès. Enregistrement vidéo pour documenter l\'état avant/après intervention. Câbles flexibles de 20 à 50 mètres pour explorer l\'intégralité des réseaux. Écrans de contrôle HD pour analyse en temps réel. Indispensables pour diagnostiquer l\'encrassement et planifier l\'intervention.',
-        image: '/images/assainissement.webp',
-        imageAlt: 'Caméra d\'inspection endoscopique pour diagnostic',
-        imageTitle: 'Inspection vidéo Paris - Diagnostic professionnel ventilation'
-      },
-      {
-        name: 'Équipements de Nettoyage Spécialisés',
-        description: 'Matériel professionnel spécifique au nettoyage : brosses rotatives motorisées adaptées aux différents diamètres de gaines, aspirateurs industriels haute puissance avec filtres HEPA pour capturer les particules fines, système de brossage pneumatique pour zones difficiles, kit de nettoyage pour bouches d\'extraction et grilles. Perches télescopiques et rallonges pour atteindre tous les points du réseau. Équipements conformes aux normes de sécurité pour intervention en toute sérénité.',
-        image: '/images/assainissement.webp',
-        imageAlt: 'Équipements de nettoyage professionnel',
-        imageTitle: 'Matériel nettoyage  Paris - Équipements professionnels assainissement'
-      },
-      {
-        name: 'Appareils de Mesure et Contrôle',
-        description: 'Instruments de mesure professionnels pour vérifier les performances et la conformité : anémomètres pour mesure des vitesses et débits d\'air, manomètres différentiels pour contrôle de pression, thermo-hygromètres pour température et humidité, détecteurs de CO2 pour qualité de l\'air. Enregistreurs de données pour suivi dans le temps. Équipements calibrés et certifiés pour garantir la fiabilité des mesures et la conformité aux normes réglementaires (Règlement Sanitaire Départemental, Code du Travail).',
-        image: '/images/assainissement.webp',
-        imageAlt: 'Appareils de mesure professionnels',
-        imageTitle: 'Instruments de mesure Paris - Contrôle conformité ventilation'
       }
     ]
   }

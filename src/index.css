@@ -1,3 +1,15 @@
+/* Import des styles composants personnalisés */
+@import './styles/components/animations.css';
+@import './styles/components/badges.css';
+@import './styles/components/buttons.css';
+@import './styles/components/cards.css';
+@import './styles/components/grids.css';
+@import './styles/components/icons.css';
+@import './styles/components/lists.css';
+@import './styles/components/sections.css';
+@import './styles/components/typography.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
