@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { services } from '../data/services';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
+import InterventionProcess from '../components/InterventionProcess';
 
 const ServiceDetailPage = () => {
   const { serviceSlug } = useParams();
@@ -23,24 +24,24 @@ const ServiceDetailPage = () => {
       />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-eco-green-50 to-nature-gray-50 py-16">
+      <div className="bg-gradient-to-br from-primary-50 to-blue-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
             to="/services" 
-            className="inline-flex items-center text-eco-green-600 hover:text-eco-green-700 mb-6 transition-colors"
+            className="inline-flex items-center text-primary-600 hover:text-primary-dark mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Retour aux services
           </Link>
           
           <div className="flex items-center mb-4">
-            <div className="w-16 h-16 bg-eco-green-100 rounded-xl flex items-center justify-center mr-4">
-              <IconComponent className="h-8 w-8 text-eco-green-600" />
+            <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mr-4">
+              <IconComponent className="h-8 w-8 text-primary-600" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-nature-gray-900">{service.title}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">{service.title}</h1>
           </div>
           
-          <p className="text-xl text-nature-gray-600 max-w-4xl">{service.description}</p>
+          <p className="text-xl text-gray-600 max-w-4xl">{service.description}</p>
         </div>
       </div>
 
@@ -62,24 +63,24 @@ const ServiceDetailPage = () => {
 
               {/* Description complète */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-nature-gray-900 mb-6 text-left">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">
                   Notre service professionnel
                 </h2>
-                <p className="text-lg text-nature-gray-700 leading-relaxed whitespace-pre-line text-left">
+                <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line text-left">
                   {service.fullDescription}
                 </p>
               </div>
 
               {/* Caractéristiques */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-nature-gray-900 mb-6 text-left">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">
                   Ce que nous faisons
                 </h2>
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {service.features.map((feature, index) => (
-                    <div key={index} className="flex items-start bg-eco-green-50 p-4 rounded-lg">
-                      <CheckCircle className="h-6 w-6 text-eco-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-nature-gray-700 leading-relaxed">{feature}</span>
+                    <div key={index} className="flex items-start gap-3 p-4 bg-white border border-primary-100 rounded-lg hover:shadow-md transition-shadow">
+                      <CheckCircle className="h-5 w-5 text-primary-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -87,51 +88,28 @@ const ServiceDetailPage = () => {
 
               {/* Avantages */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-nature-gray-900 mb-6 text-left">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">
                   Pourquoi nous choisir
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start bg-nature-gray-50 p-4 rounded-lg">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-nature-gray-700">{benefit}</span>
+                    <div key={index} className="flex items-start bg-blue-50 p-4 rounded-lg">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{benefit}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Étapes d'intervention */}
-              {service.interventionSteps && service.interventionSteps.length > 0 && (
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-nature-gray-900 mb-8 text-left">
-                    Notre processus d'intervention
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {service.interventionSteps.map((step, index) => (
-                      <div key={index} className="relative bg-white border-2 border-eco-green-100 rounded-xl p-6 hover:border-eco-green-300 transition-colors">
-                        <div className="absolute -top-4 left-6 w-8 h-8 bg-eco-green-600 text-white rounded-full flex items-center justify-center font-bold">
-                          {index + 1}
-                        </div>
-                        <div className="mb-4 mt-2">
-                          <img src={step.icon} alt={step.title} className="h-12 w-12 opacity-70" />
-                        </div>
-                        <h3 className="text-xl font-bold text-nature-gray-900 mb-3">{step.title}</h3>
-                        <p className="text-nature-gray-600 leading-relaxed">{step.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {/* Équipements */}
               {service.equipments && service.equipments.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-nature-gray-900 mb-8 text-left">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-8 text-left">
                     Nos équipements professionnels
                   </h2>
                   <div className="space-y-8">
                     {service.equipments.map((equipment, index) => (
-                      <div key={index} className="bg-gradient-to-br from-nature-gray-50 to-eco-green-50 rounded-2xl p-8 border border-eco-green-100">
+                      <div key={index} className="bg-gradient-to-br from-blue-50 to-primary-50 rounded-2xl p-8 border border-primary-100">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                           <div className="md:col-span-1">
                             <img
@@ -142,8 +120,8 @@ const ServiceDetailPage = () => {
                             />
                           </div>
                           <div className="md:col-span-2">
-                            <h3 className="text-2xl font-bold text-nature-gray-900 mb-4">{equipment.name}</h3>
-                            <p className="text-nature-gray-700 leading-relaxed">{equipment.description}</p>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{equipment.name}</h3>
+                            <p className="text-gray-700 leading-relaxed">{equipment.description}</p>
                           </div>
                         </div>
                       </div>
@@ -157,20 +135,20 @@ const ServiceDetailPage = () => {
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 {/* CTA Contact */}
-                <div className="bg-gradient-to-br from-eco-green-600 to-eco-green-700 text-white p-8 rounded-2xl shadow-xl">
+                <div className="bg-gradient-to-br from-primary-600 to-primary-dark text-white p-8 rounded-2xl shadow-xl">
                   <h3 className="text-2xl font-bold mb-4">Besoin de ce service ?</h3>
                   <p className="mb-6 opacity-90">
                     Contactez-nous pour un devis gratuit et personnalisé adapté à vos besoins.
                   </p>
                   <Link
                     to="/contact"
-                    className="block w-full bg-white text-eco-green-600 text-center py-3 px-6 rounded-lg font-semibold hover:bg-nature-gray-50 transition-colors mb-3"
+                    className="block w-full bg-white text-primary-600 text-center py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-colors mb-3"
                   >
                     Demander un devis
                   </Link>
                   <a
                     href="tel:+33123456789"
-                    className="flex items-center justify-center w-full bg-eco-green-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-eco-green-900 transition-colors"
+                    className="flex items-center justify-center w-full bg-primary-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-900 transition-colors"
                   >
                     <Phone className="h-5 w-5 mr-2" />
                     Appel d'urgence
@@ -178,35 +156,35 @@ const ServiceDetailPage = () => {
                 </div>
 
                 {/* Points clés */}
-                <div className="bg-white border-2 border-eco-green-100 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-nature-gray-900 mb-4">Points clés</h3>
+                <div className="bg-white border-2 border-primary-100 p-6 rounded-2xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Points clés</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-nature-gray-700">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-2 flex-shrink-0" />
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
                       Intervention rapide 24h/7j
                     </li>
-                    <li className="flex items-center text-nature-gray-700">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-2 flex-shrink-0" />
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
                       Techniciens certifiés
                     </li>
-                    <li className="flex items-center text-nature-gray-700">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-2 flex-shrink-0" />
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
                       Produits éco-responsables
                     </li>
-                    <li className="flex items-center text-nature-gray-700">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-2 flex-shrink-0" />
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
                       Garantie de résultat
                     </li>
-                    <li className="flex items-center text-nature-gray-700">
-                      <CheckCircle className="h-5 w-5 text-eco-green-600 mr-2 flex-shrink-0" />
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0" />
                       Devis gratuit
                     </li>
                   </ul>
                 </div>
 
                 {/* Autres services */}
-                <div className="bg-nature-gray-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-nature-gray-900 mb-4">Autres services</h3>
+                <div className="bg-blue-50 p-6 rounded-2xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Autres services</h3>
                   <ul className="space-y-2">
                     {services
                       .filter(s => s.id !== service.id)
@@ -215,7 +193,7 @@ const ServiceDetailPage = () => {
                         <li key={otherService.id}>
                           <Link
                             to={`/services/${otherService.slug}`}
-                            className="text-eco-green-600 hover:text-eco-green-700 hover:underline transition-colors"
+                            className="text-primary-600 hover:text-primary-dark hover:underline transition-colors"
                           >
                             {otherService.title}
                           </Link>
@@ -228,6 +206,9 @@ const ServiceDetailPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Processus d'Intervention - Composant Global */}
+      <InterventionProcess />
     </>
   );
 };

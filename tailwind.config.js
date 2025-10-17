@@ -4,29 +4,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        'eco-green': {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+        'primary': {
+          light: '#09f6fd',  // Bleu clair cyan
+          DEFAULT: '#2fa0d6', // Bleu moyen
+          dark: '#2e8fcb',   // Bleu foncé
+          50: '#e6f9fd',
+          100: '#d0f4fb',
+          200: '#a8ebf8',
+          300: '#7de2f5',
+          400: '#09f6fd',     // Bleu clair
+          500: '#2fa0d6',     // Bleu moyen
+          600: '#2e8fcb',     // Bleu foncé
+          700: '#2575a8',
+          800: '#1d5e85',
+          900: '#154862',
         },
-        'nature-gray': {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          200: '#e5e7eb',
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-          600: '#4b5563',
-          700: '#374151',
-          800: '#1f2937',
-          900: '#111827',
+        'accent': {
+          DEFAULT: '#09f6fd',
+          light: '#d0f4fb',
+          dark: '#2e8fcb',
         },
       },
       fontFamily: {

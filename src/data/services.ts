@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Bug, Rat, Bird, Sparkles, BoxesIcon, Fan } from 'lucide-react';
+import { Building2, Bug, Rat, Bird, Sparkles, BoxesIcon, Fan, HardHat } from 'lucide-react';
 
 export interface Service {
   id: string;
@@ -36,26 +36,26 @@ export const services: Service[] = [
     imageAlt: 'Intervention de dératisation professionnelle à Paris - Technicien expert éliminant les rongeurs nuisibles avec équipement certifié',
     imageTitle: 'Dératisation Paris - Traitement professionnel anti-rats et souris par expert certifié Certibiocide',
     features: [
-      'Inspection approfondie et diagnostic expert : localisation des nids, identification des voies d\'accès et zones à risque dans vos locaux parisiens',
-      'Identification précise des espèces (rats noirs communs à Paris, rats d\'égout, souris domestiques) et évaluation du niveau d\'infestation',
-      'Traitement professionnel avec postes d\'appâtage sécurisés certifiés et rodenticides homologués à action rapide',
-      'Colmatage hermétique et sécurisation de tous les points d\'entrée potentiels (fissures, gaines techniques, conduits, ventilations)',
-      'Décontamination et désinfection complète des zones infestées pour éliminer bactéries et odeurs',
-      'Installation de dispositifs de surveillance et de prévention pour détecter toute nouvelle activité',
-      'Protection durable de vos installations contre les dommages (câblages électriques, isolation, cloisons, canalisations)',
-      'Formation et conseils personnalisés sur les bonnes pratiques d\'hygiène urbaine et de prévention',
-      'Suivi rigoureux post-traitement avec contrôles réguliers et ajustements si nécessaire',
-      'Rapports d\'intervention détaillés et certificats de traitement pour vos obligations réglementaires'
+      'Rodenticides professionnels : Brodifacoum, Bromadiolone, Difenacoum, Diféthialone',
+      'Formulations adaptées : Bloc paraffiné, pâte, céréales',
+      'Lutte efficace contre rats et souris',
+      'Identification précise de l\'espèce (rats noirs, rats d\'égout, souris domestiques)',
+      'Traitement spécifique avec postes d\'appâtage sécurisés et rodenticides homologués',
+      'Préconisations post-traitement pour éviter la réinfestation',
+      'Chaque traitement consigné dans un compte rendu avec les produits utilisés',
+      'Colmatage hermétique et sécurisation de tous les points d\'entrée potentiels',
+      'Décontamination et désinfection complète des zones infestées',
+      'Installation de dispositifs de surveillance et de prévention'
     ],
     benefits: [
-      'Intervention d\'urgence rapide sous 2h dans tous les arrondissements de Paris et petite couronne',
-      'Élimination garantie à 100% avec engagement écrit de résultat et passages supplémentaires inclus si besoin',
-      'Respect scrupuleux des normes HACCP pour restaurants et des réglementations sanitaires parisiennes',
-      'Solutions éco-responsables prioritaires avec rodenticides certifiés et techniques de capture non toxiques',
-      'Techniciens experts diplômés Certibiocide avec formation continue et équipements professionnels',
-      'Discrétion absolue garantie : véhicules banalisés sans marquage, interventions hors heures si souhaité',
-      'Tarifs transparents et compétitifs pour Paris avec devis détaillé gratuit et sans engagement',
-      'Service après-vente et garantie de réintervention gratuite pendant 6 mois'
+      'Procédures rigoureuses et ciblées pour chaque situation',
+      'Biocides appliqués dans le respect des normes d\'hygiène et de sécurité les plus strictes',
+      'Experts formés aux risques sanitaires',
+      'Adapté à tous types de lieux : immeubles, hôtels, écoles, logements',
+      'Véhicules banalisés pour interventions discrètes',
+      'Personnel formé agissant avec professionnalisme',
+      'Traitements certifiés Certibiocide pour garantir la sécurité',
+      'Service après-vente et garantie de réintervention'
     ],
     image: '/images/deratisation.webp',
     interventionSteps: [
@@ -110,26 +110,26 @@ export const services: Service[] = [
     imageAlt: 'Technicien en équipement de protection effectuant une désinfection professionnelle à Paris',
     imageTitle: 'Désinfection professionnelle Paris - Traitement certifié par experts sanitaires',
     features: [
-      'Élimination complète des germes, bactéries pathogènes et virus (dont coronavirus)',
-      'Désinfection professionnelle de toutes surfaces contaminées (sols, murs, mobilier, équipements)',
+      'Traitement virucide, fongicide ou bactéricide selon les besoins',
+      'Zones sensibles identifiées et traitées en priorité',
+      'Remise d\'un certificat de désinfection après intervention',
+      'Procédures respectant les normes sanitaires en vigueur (EN 14476, etc.)',
+      'Désinfection professionnelle de toutes surfaces contaminées',
       'Traitement de l\'air ambiant par nébulisation ou thermo-nébulisation',
       'Décontamination après infestation de rongeurs ou d\'insectes',
       'Application de produits virucides, bactéricides et fongicides homologués',
-      'Respect strict des protocoles sanitaires HACCP et des normes d\'hygiène',
       'Prévention des risques sanitaires et des maladies transmissibles',
-      'Certification de traitement avec attestation de conformité',
-      'Conseils pour maintenir un environnement sain durablement',
-      'Intervention rapide 24h/24 et 7j/7 pour urgences sanitaires'
+      'Conseils pour maintenir un environnement sain durablement'
     ],
     benefits: [
-      'Assainissement total et certifié de vos espaces professionnels ou résidentiels',
-      'Protection maximale contre les maladies liées aux nuisibles (leptospirose, salmonellose, etc.)',
-      'Produits professionnels respectueux de l\'environnement et sans danger après séchage',
-      'Conformité garantie aux normes sanitaires pour audits et contrôles',
-      'Intervention discrète avec respect de votre activité et de vos horaires',
-      'Techniciens formés aux protocoles de biosécurité et équipés d\'EPI complets',
-      'Traçabilité complète avec rapports d\'intervention détaillés',
-      'Tarifs adaptés aux professionnels avec devis personnalisé gratuit'
+      'Traçabilité stricte de chaque désinfection',
+      'Utilisation de machines à vapeur sèche, nébulisateurs ULV, produits de qualité hospitalière',
+      'Équipements de désinfection professionnels adaptés',
+      'Désinfection de bureaux, logements, locaux professionnels, véhicules, etc.',
+      'Pour tous les environnements',
+      'Équipes qualifiées pour opérations en milieu sensible (logements, bureaux, locaux médicaux)',
+      'Produits virucides, bactéricides et fongicides certifiés',
+      'Interventions sûres et traçables'
     ],
     image: '/images/desinfection.webp',
     interventionSteps: [
@@ -184,11 +184,11 @@ export const services: Service[] = [
     imageAlt: 'Intervention de désinsectisation professionnelle à Paris contre cafards et insectes',
     imageTitle: 'Désinsectisation Paris - Traitement professionnel anti-insectes certifié',
     features: [
-      'Diagnostic entomologique complet avec identification précise des espèces d\'insectes',
-      'Traitement professionnel contre cafards, blattes et insectes rampants',
-      'Élimination totale des punaises de lit par traitement chimique et/ou thermique',
+      'Identification de l\'espèce (cafards, punaises, guêpes, etc.)',
+      'Traitement spécifique (gels, nébulisation, pulvérisation)',
+      'Préconisations post-traitement pour éviter la réinfestation',
+      'Chaque traitement consigné dans un compte rendu avec produits utilisés',
       'Destruction des nids de guêpes, frelons asiatiques et frelons européens',
-      'Lutte ciblée contre les fourmis charpentières et autres espèces invasives',
       'Traitement des mites alimentaires et textiles avec pièges à phéromones',
       'Éradication des puces pour protéger vos animaux et votre famille',
       'Prévention durable avec barrières insecticides et conseils personnalisés',
@@ -196,12 +196,12 @@ export const services: Service[] = [
       'Interventions discrètes adaptées aux normes HACCP pour les professionnels de l\'alimentaire'
     ],
     benefits: [
-      'Élimination rapide et garantie des insectes sous 24 à 48h maximum',
-      'Respect strict des normes d\'hygiène et de sécurité alimentaire',
-      'Solutions éco-responsables avec insecticides certifiés faible impact environnemental',
-      'Techniciens certifiés Certibiocide formés aux dernières techniques',
-      'Traitement adapté à chaque insecte avec garantie de résultat',
-      'Intervention d\'urgence 7j/7 pour les infestations sévères',
+      'Méthodologie précise selon l\'insecte cible',
+      'Biocides appliqués dans le respect des normes d\'hygiène et de sécurité les plus strictes',
+      'Intervention discrète et rapide avec véhicules banalisés',
+      'Personnel formé agissant avec discrétion dans immeubles, hôtels, écoles, logements',
+      'Techniciens habilités à intervenir contre tous types d\'infestations',
+      'Certification Certibiocide garantissant l\'utilisation de produits homologués et sécurisés',
       'Protection longue durée grâce aux produits rémanents professionnels',
       'Devis gratuit et tarifs transparents pour particuliers et professionnels'
     ],
@@ -249,6 +249,80 @@ export const services: Service[] = [
   },
   {
     id: '4',
+    title: 'Nids de Guêpes et Frelons - Interventions en Hauteur',
+    slug: 'guepes-frelons-hauteur',
+    description: 'Spécialistes de la destruction de nids de guêpes et frelons asiatiques en hauteur à Paris et Île-de-France. Interventions sécurisées sur toitures, arbres, façades, cheminées, combles. Équipes formées aux travaux en hauteur avec certification Certibiocide. Matériel professionnel : nacelles, harnais, perches télescopiques.',
+    fullDescription: 'Notre service spécialisé dans la destruction de nids de guêpes et frelons en hauteur garantit des interventions sécurisées et efficaces. Nos équipes sont formées aux travaux en hauteur et disposent de la certification Certibiocide, garantissant des interventions sûres et conformes aux normes sanitaires. Nous intervenons sur toutes les zones difficiles d\'accès : toitures, arbres de grande hauteur, façades d\'immeubles, cheminées, combles, corniches, gouttières et volets roulants. Notre expertise spécifique des frelons asiatiques nous permet d\'assurer une localisation rapide des nids (parfois à plus de 10 mètres de hauteur) et d\'appliquer des techniques adaptées à cette espèce invasive, tant en préventif qu\'en curatif. Nous utilisons du matériel professionnel haute performance : nacelles élévatrices, harnais antichute et EPI complets, perches télescopiques, lances à injection longue portée, systèmes d\'ancrage et méthodes d\'accès par corde (type cordiste).',
+    icon: HardHat,
+    metaDescription: 'Destruction nids guêpes frelons hauteur Paris - Interventions sécurisées toitures, arbres, façades. Experts certifiés Certibiocide. Matériel professionnel. Devis gratuit.',
+    imageAlt: 'Intervention professionnelle en hauteur pour destruction de nid de frelons asiatiques',
+    imageTitle: 'Destruction nids guêpes frelons Paris - Intervention hauteur sécurisée certifiée',
+    features: [
+      'Localisation rapide des nids (parfois à +10 m de hauteur)',
+      'Techniques adaptées aux frelons asiatiques, espèce invasive',
+      'Intervention préventive et curative',
+      'Interventions sécurisées en toute hauteur sur toitures',
+      'Destruction de nids dans les arbres de grande hauteur',
+      'Intervention sur façades d\'immeubles et zones difficiles d\'accès',
+      'Traitement des nids en cheminées et combles',
+      'Accès aux corniches, gouttières et volets roulants',
+      'Équipes formées aux travaux en hauteur',
+      'Certification Certibiocide garantissant conformité aux normes sanitaires'
+    ],
+    benefits: [
+      'Nacelles élévatrices pour accès sécurisé aux grandes hauteurs',
+      'Harnais antichute et EPI complets pour sécurité maximale',
+      'Perches télescopiques permettant intervention à distance',
+      'Lances à injection longue portée pour traitement précis',
+      'Systèmes d\'ancrage professionnels certifiés',
+      'Méthodes d\'accès par corde (type cordiste) pour zones inaccessibles',
+      'Intervention rapide et efficace avec matériel adapté',
+      'Respect des normes de sécurité et protocoles sanitaires'
+    ],
+    image: '/images/RucheArbre.webp',
+    interventionSteps: [
+      {
+        icon: "https://img.icons8.com/ios/50/search.png",
+        title: 'Localisation du Nid',
+        description: 'Repérage précis du nid de guêpes ou frelons, même en hauteur (+10m). Évaluation de l\'accessibilité, identification de l\'espèce (frelon asiatique, guêpe commune, etc.) et planification de la méthode d\'intervention la plus sûre.'
+      },
+      {
+        icon: "https://img.icons8.com/ios/50/construction-helmet.png",
+        title: 'Sécurisation de la Zone',
+        description: 'Mise en place des équipements de sécurité : installation des systèmes d\'ancrage, vérification des harnais antichute, positionnement de la nacelle élévatrice ou préparation de l\'accès par corde. Périmètre de sécurité établi au sol.'
+      },
+      {
+        icon: "https://img.icons8.com/ios/50/poison.png",
+        title: 'Destruction Professionnelle',
+        description: 'Intervention sécurisée avec perches télescopiques ou lances à injection. Application de biocides certifiés directement dans le nid. Retrait du nid si nécessaire. Vérification complète et traitement préventif de la zone pour éviter toute réinfestation.'
+      }
+    ],
+    equipments: [
+      {
+        name: 'Nacelles Élévatrices Professionnelles',
+        description: 'Nacelles automotrices de 12 à 25 mètres de hauteur pour accéder en toute sécurité aux nids situés sur les toitures, façades et arbres de grande hauteur. Stabilisateurs automatiques et commandes précises pour un positionnement optimal. Conformes aux normes de sécurité pour travaux en hauteur. Permettent d\'intervenir efficacement sur les nids de frelons asiatiques souvent situés à plus de 10 mètres du sol.',
+        image: '/images/RucheArbre.webp',
+        imageAlt: 'Nacelle élévatrice professionnelle pour intervention anti-frelons en hauteur',
+        imageTitle: 'Nacelle élévatrice Paris - Équipement professionnel destruction nids hauteur'
+      },
+      {
+        name: 'Équipements de Protection et Travail en Hauteur',
+        description: 'Harnais antichute certifiés EN 361, longes avec absorbeur d\'énergie, casques de protection, cordes et mousquetons professionnels, systèmes d\'ancrage mobiles et fixes. Combinaisons de protection intégrale anti-piqûres spéciales frelons asiatiques. Gants renforcés, masques respiratoires. Équipements conformes aux normes européennes pour garantir la sécurité maximale de nos techniciens cordistes lors des interventions en hauteur.',
+        image: '/images/guepesMort.webp',
+        imageAlt: 'Équipements de protection EPI et harnais antichute pour travaux en hauteur',
+        imageTitle: 'EPI travaux hauteur Paris - Protection complète intervention frelons'
+      },
+      {
+        name: 'Perches Télescopiques et Lances à Injection',
+        description: 'Perches télescopiques professionnelles extensibles de 3 à 12 mètres pour traiter les nids sans approche directe. Lances à injection longue portée avec système de pulvérisation haute pression pour application précise des biocides au cœur du nid. Embouts adaptés aux différentes configurations. Permettent un traitement efficace tout en maintenant une distance de sécurité. Matériaux légers en fibre de carbone ou aluminium pour manipulation aisée en hauteur.',
+        image: '/images/RucheArbre.webp',
+        imageAlt: 'Perches télescopiques et lances à injection pour destruction nids frelons',
+        imageTitle: 'Perches télescopiques Paris - Matériel professionnel traitement nids hauteur'
+      }
+    ]
+  },
+  {
+    id: '5',
     title: 'Dépigeonnage Professionnel à Paris',
     slug: 'depigeonnage',
     description: 'Spécialiste du dépigeonnage à Paris et Île-de-France. Solutions durables contre les pigeons et volatiles nuisibles. Installation de pics anti-pigeons, filets de protection, répulsifs ultrasoniques. Protection des façades, balcons, toitures. Intervention certifiée immeubles et monuments.',
@@ -258,26 +332,26 @@ export const services: Service[] = [
     imageAlt: 'Installation de pics anti-pigeons sur façade parisienne par professionnel',
     imageTitle: 'Dépigeonnage Paris - Protection professionnelle contre pigeons et volatiles',
     features: [
-      'Diagnostic complet des zones infestées et des points de nidification des pigeons',
-      'Installation de pics anti-pigeons en acier inoxydable sur rebords, corniches et toitures',
-      'Pose de filets de protection transparents et résistants pour balcons et coursives',
-      'Systèmes d\'effarouchement à ultrasons et répulsifs visuels non nuisibles',
-      'Fils tendus discrets pour empêcher le perchage sur les façades',
-      'Nettoyage professionnel et désinfection des zones souillées par les fientes',
-      'Colmatage des accès aux combles et greniers pour éviter la nidification',
-      'Solutions respectueuses du bien-être animal conformes à la réglementation',
-      'Maintenance et contrôles réguliers des installations anti-pigeons',
-      'Interventions en hauteur sécurisées avec cordistes professionnels qualifiés'
+      'Analyse des points de nidification',
+      'Pose de systèmes dissuasifs',
+      'Éventuelle capture dans le respect de la faune urbaine',
+      'Rapport d\'intervention fourni, avec suivi photo si besoin',
+      'Installation de pics anti-pigeons en acier inoxydable sur rebords et corniches',
+      'Pose de filets de protection transparents et résistants',
+      'Systèmes d\'effarouchement à ultrasons et répulsifs visuels',
+      'Fils tendus discrets pour empêcher le perchage',
+      'Nettoyage professionnel et désinfection des zones souillées',
+      'Maintenance et contrôles réguliers des installations'
     ],
     benefits: [
-      'Protection durable des façades contre la corrosion des fientes acides',
-      'Préservation de l\'esthétique et de la valeur patrimoniale de vos bâtiments',
-      'Réduction des nuisances sonores et olfactives liées aux pigeons',
-      'Prévention des risques sanitaires (maladies, parasites, allergies)',
-      'Solutions éthiques sans danger pour les oiseaux ni pour l\'environnement',
-      'Installation discrète et esthétique respectant l\'architecture parisienne',
-      'Économies sur les frais de nettoyage et d\'entretien des façades',
-      'Conformité aux règles de copropriété et aux normes urbanistiques parisiennes'
+      'Méthode durable et éthique',
+      'Décontamination des fientes et traitement des zones souillées inclus',
+      'Hygiène renforcée',
+      'Intervention en toiture, corniches, monuments, bâtiments publics',
+      'Adaptabilité à tout type de bâtiment',
+      'Solutions respectueuses du bien-être animal',
+      'Installation discrète respectant l\'architecture',
+      'Conformité aux règles de copropriété et normes urbanistiques'
     ],
     image: '/images/dépigeonnage.webp',
     interventionSteps: [
@@ -322,7 +396,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '5',
+    id: '6',
     title: 'Hygiène du Bâtiment à Paris',
     slug: 'hygiene-du-batiment',
     description: 'Services professionnels d\'hygiène et d\'entretien pour bâtiments à Paris. Nettoyage, désinfection, désodorisation des locaux professionnels et résidentiels. Protocoles HACCP pour restaurants et commerces alimentaires. Audits d\'hygiène et mise aux normes sanitaires.',
@@ -332,26 +406,26 @@ export const services: Service[] = [
     imageAlt: 'Agent d\'hygiène professionnel effectuant le nettoyage et la désinfection d\'un bâtiment à Paris',
     imageTitle: 'Hygiène du bâtiment Paris - Services professionnels nettoyage et désinfection',
     features: [
-      'Nettoyage professionnel approfondi de tous types de locaux et surfaces',
-      'Désinfection régulière des zones à risque et points de contact',
+      'Nettoyage des parties communes et techniques',
+      'Évacuation des détritus et désinfection ponctuelle',
+      'Rapport de passage périodique fourni',
+      'Cahier de liaison pour assurer le suivi',
       'Traitement et entretien des sols (carrelage, parquet, moquette, béton)',
       'Nettoyage et désinfection des sanitaires avec produits bactéricides',
       'Désodorisation et assainissement de l\'air ambiant',
-      'Dépoussiérage et entretien du mobilier et des équipements',
       'Protocoles HACCP pour cuisines professionnelles et zones alimentaires',
       'Audits d\'hygiène avec rapports détaillés et recommandations',
-      'Mise en conformité sanitaire pour contrôles officiels et certifications',
-      'Formation du personnel aux bonnes pratiques d\'hygiène et de nettoyage'
+      'Formation du personnel aux bonnes pratiques d\'hygiène'
     ],
     benefits: [
-      'Environnement de travail sain et agréable pour vos collaborateurs',
-      'Image professionnelle irréprochable auprès de vos clients et partenaires',
-      'Conformité garantie aux normes sanitaires et réglementations en vigueur',
-      'Réduction de l\'absentéisme grâce à un environnement hygiénique',
-      'Produits écologiques certifiés respectueux de l\'environnement',
-      'Interventions planifiées en dehors de vos heures d\'activité',
-      'Traçabilité complète avec rapports d\'intervention et certificats',
-      'Tarifs professionnels dégressifs selon la fréquence d\'intervention'
+      'Protocole d\'entretien rigoureux',
+      'Interventions favorisant la salubrité et la prévention des nuisibles',
+      'Cadre sain au quotidien',
+      'Équipes intervenant selon vos horaires pour ne pas perturber les occupants',
+      'Souplesse et réactivité',
+      'Environnement de travail sain et agréable',
+      'Conformité garantie aux normes sanitaires et réglementations',
+      'Produits écologiques certifiés respectueux de l\'environnement'
     ],
     image: '/images/hygienedubat.webp',
     interventionSteps: [
@@ -396,36 +470,36 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '6',
-    title: 'Débarras Professionnel à Paris',
+    id: '7',
+    title: 'Débarras Post-Mortem à Paris',
     slug: 'debarras-pro',
-    description: 'Service de débarras professionnel à Paris et Île-de-France. Évacuation rapide de locaux, bureaux, caves, greniers, appartements. Tri sélectif, recyclage, enlèvement d\'encombrants. Intervention pour entreprises, particuliers, successions. Devis gratuit et tarifs transparents.',
-    fullDescription: 'Notre service de débarras professionnel à Paris prend en charge l\'évacuation complète de tous types de locaux et l\'enlèvement d\'encombrants. Que ce soit pour vider un appartement après succession, débarrasser des bureaux avant déménagement, évacuer une cave ou un grenier, nettoyer un local commercial, nous intervenons rapidement avec une équipe expérimentée et équipée. Nous assurons le tri sélectif des objets et déchets : valorisation et don des objets réutilisables, recyclage des matériaux (bois, métal, plastique, papier), évacuation conforme des déchets dangereux, traitement spécifique des DEEE (équipements électriques et électroniques). Service complet incluant le démontage du mobilier si nécessaire, le nettoyage après débarras, et la remise en état des lieux. Interventions respectueuses de l\'environnement avec traçabilité complète et bordereaux de suivi des déchets.',
+    description: 'Service de débarras professionnel et post-mortem à Paris et Île-de-France. Évacuation rapide et discrète de locaux, appartements. Tri sélectif, recyclage, nettoyage complet. Intervention spécialisée pour entreprises, particuliers, successions. Devis gratuit et tarifs transparents.',
+    fullDescription: 'Notre service de débarras professionnel et post-mortem à Paris prend en charge l\'évacuation complète de tous types de locaux dans des situations délicates. Spécialement formées pour le débarras post-mortem, nos équipes interviennent dans le strict respect des protocoles sanitaires, avec discrétion, efficacité et professionnalisme, garantissant un assainissement complet des lieux. Que ce soit pour vider un appartement après succession, débarrasser des locaux insalubres, évacuer des bureaux, caves ou greniers, nous intervenons rapidement avec une équipe expérimentée et équipée. Nous assurons le tri sélectif des objets et déchets : valorisation et don des objets réutilisables, recyclage des matériaux, évacuation conforme des déchets dangereux. Service complet incluant le démontage du mobilier, le nettoyage après débarras, et la remise en état des lieux.',
     icon: BoxesIcon,
-    metaDescription: 'Débarras Paris - Évacuation locaux, appartements, bureaux. Tri sélectif, recyclage. Devis gratuit. Intervention rapide entreprises et particuliers Île-de-France.',
-    imageAlt: 'Équipe de débarras professionnel évacuant un local à Paris',
-    imageTitle: 'Débarras professionnel Paris - Évacuation et tri sélectif conformes',
+    metaDescription: 'Débarras post-mortem Paris - Évacuation discrète locaux, appartements. Tri sélectif, assainissement. Devis gratuit. Intervention rapide et professionnelle Île-de-France.',
+    imageAlt: 'Équipe de débarras professionnel post-mortem évacuant un local à Paris avec discrétion',
+    imageTitle: 'Débarras post-mortem Paris - Évacuation professionnelle et assainissement',
     features: [
-      'Débarras complet d\'appartements, maisons, bureaux, locaux commerciaux',
-      'Évacuation de caves, greniers, garages et espaces de stockage encombrés',
-      'Tri sélectif professionnel et valorisation des objets réutilisables',
+      'Évaluation des volumes à évacuer',
+      'Tri des déchets (recyclables / encombrants / dangereux)',
+      'Évacuation et nettoyage de fin de chantier',
+      'Remise d\'un bordereau',
+      'Traitement de logements insalubres, locaux industriels, bureaux, caves, greniers',
+      'Évacuation de caves, greniers, garages et espaces de stockage',
       'Recyclage des matériaux conformément aux filières agréées',
-      'Traitement spécifique des déchets dangereux et polluants (amiante, plomb)',
-      'Enlèvement et recyclage des DEEE (électroménager, informatique)',
+      'Traitement spécifique des déchets dangereux et polluants',
       'Démontage et évacuation de mobilier encombrant',
-      'Nettoyage complet après débarras pour remise en état des lieux',
-      'Intervention rapide sur rendez-vous ou en urgence sous 48h',
-      'Service discret adapté aux situations sensibles (succession, saisie)'
+      'Nettoyage complet après débarras pour remise en état des lieux'
     ],
     benefits: [
-      'Gain de temps considérable avec service clé en main tout compris',
-      'Équipe professionnelle expérimentée et respectueuse de vos biens',
-      'Respect de l\'environnement avec tri et recyclage systématiques',
-      'Traçabilité complète avec bordereaux de suivi des déchets',
-      'Tarifs transparents et compétitifs avec devis détaillé gratuit',
-      'Assurance responsabilité civile professionnelle pour votre tranquillité',
-      'Possibilité de valoriser certains objets pour réduire la facture',
-      'Conformité aux réglementations parisiennes sur les déchets'
+      'Organisation et efficacité',
+      'Valorisation des déchets et traçabilité des flux assurées',
+      'Respect des normes environnementales',
+      'Équipes spécialement formées pour le débarras post-mortem',
+      'Intervention discrète dans le strict respect des protocoles sanitaires',
+      'Assainissement complet des lieux garanti',
+      'Service adapté aux situations sensibles (succession, saisie)',
+      'Tarifs transparents et compétitifs avec devis détaillé gratuit'
     ],
     image: '/images/debarras.webp',
     interventionSteps: [
@@ -470,7 +544,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '7',
+    id: '8',
     title: 'Assainissement à Paris',
     slug: 'assainissement-vmc',
     description: 'Service professionnel d\'assainissement et entretien à Paris. Nettoyage, désinfection et maintenance des systèmes de ventilation. Inspection vidéo, décontamination des gaines, amélioration de la qualité de l\'air intérieur. Conformité réglementaire garantie.',
