@@ -20,8 +20,13 @@ const SEO: React.FC<SEOProps> = ({
   image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
   keywords = 'dératisation Bondy, désinsectisation Île-de-France, désinfection 93, extermination nuisibles, dératisation Paris, punaises de lit, cafards, rats, souris, hygiène 3D, devis gratuit dératisation',
 }) => {
-  const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://site-deratisation.vercel.app";
-  const url = canonical && canonical.startsWith("/") ? `${siteUrl}${canonical}` : siteUrl;
+  const siteUrl = "https://site-deratisation.vercel.app";
+  
+  // Construire l'URL canonique correctement
+  const canonicalUrl = canonical 
+    ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical.startsWith('/') ? canonical : `/${canonical}`}`)
+    : (typeof window !== "undefined" ? window.location.href : siteUrl);
+  
   const isHomePage = !canonical || canonical === "/";
   
   // Titre optimisé SEO (50-60 caractères)
@@ -32,20 +37,25 @@ const SEO: React.FC<SEOProps> = ({
   return (
     <Helmet>
       {/* Standard metadata */}
+      <html lang="fr" />
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Hygiène Protect 3D" />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={canonicalUrl} />
+      
+      {/* Hreflang pour le français */}
+      <link rel="alternate" hrefLang="fr" href={canonicalUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:site_name" content={name} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content="fr_FR" />
 
@@ -146,7 +156,7 @@ const SEO: React.FC<SEOProps> = ({
                 '@type': 'ListItem',
                 position: 2,
                 name: title,
-                item: url
+                item: canonicalUrl
               }
             ]
           })}
