@@ -27,7 +27,7 @@ const LegalNoticePage = () => {
                 <p className="text-gray-700 mb-2"><strong>Numéro de SIRET</strong> : 510 856 032 00030</p>
                 <p className="text-gray-700 mb-2"><strong>Responsable de la publication</strong> : M. Rik Sami</p>
                 <p className="text-gray-700 mb-2"><strong>Téléphone</strong> : <a href="tel:+33767393885" className="text-primary-600 hover:underline font-semibold">07 67 39 38 85</a></p>
-                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:contact@hygieneprotect3d.fr" className="text-primary-600 hover:underline font-semibold">contact@hygieneprotect3d.fr</a></p>
+                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:HYGIENEPROTECT3D@hotmail.com" className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a></p>
                 <p className="text-gray-700 mb-2"><strong>Horaires</strong> : Lundi - Vendredi : 8h00 - 18h00</p>
                 <p className="text-gray-700"><strong>Zone d'intervention</strong> : Bondy, Seine-Saint-Denis (93) et Île-de-France</p>
               </div>
@@ -93,7 +93,7 @@ const LegalNoticePage = () => {
                 <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données pour des raisons légitimes</li>
               </ul>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Vous pouvez exercer ces droits en contactant M. Rik Sami à l'adresse email <a href="mailto:contact@hygieneprotect3d.fr" className="text-primary-600 hover:underline font-semibold">contact@hygieneprotect3d.fr</a> ou par téléphone au <strong>07 67 39 38 85</strong>. Une réponse vous sera apportée dans un délai maximum d'un mois.
+                Vous pouvez exercer ces droits en contactant M. Rik Sami à l'adresse email <a href="mailto:hygieneprotect3d@hotmail.com" className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a> ou par téléphone au <strong>07 67 39 38 85</strong>. Une réponse vous sera apportée dans un délai maximum d'un mois.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Pour plus d'informations sur le traitement de vos données personnelles, consultez notre <a href="/politique-de-confidentialite" className="text-primary-600 hover:underline font-semibold">Politique de Confidentialité complète</a>.
@@ -150,7 +150,7 @@ const LegalNoticePage = () => {
               </p>
               <div className="bg-primary-50 p-6 rounded-lg border-2 border-primary-200">
                 <p className="text-gray-900 mb-3 text-lg font-bold">Hygiène Protect 3D</p>
-                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:contact@hygieneprotect3d.fr" className="text-primary-600 hover:underline font-semibold">contact@hygieneprotect3d.fr</a></p>
+                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:HYGIENEPROTECT3D@hotmail.com" className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a></p>
                 <p className="text-gray-700 mb-2"><strong>Téléphone</strong> : <a href="tel:+33767393885" className="text-primary-600 hover:underline font-semibold">07 67 39 38 85</a></p>
                 <p className="text-gray-700 mb-2"><strong>Horaires d'ouverture</strong> : Lundi - Vendredi : 8h00 - 18h00</p>
                 <p className="text-gray-700"><strong>Zone d'intervention</strong> : Bondy, Seine-Saint-Denis (93), Paris et toute l'Île-de-France</p>

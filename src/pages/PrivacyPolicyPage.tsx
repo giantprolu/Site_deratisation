@@ -112,7 +112,7 @@ const PrivacyPolicyPage = () => {
                 <li><strong>Droit de définir des directives post-mortem</strong> : Concernant la conservation, l'effacement et la communication de vos données après votre décès</li>
               </ul>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Pour exercer ces droits, contactez-nous par email à <strong>contact@hygieneprotect3d.fr</strong> ou par téléphone au <strong>07 67 39 38 85</strong>. Nous vous répondrons dans un délai maximum d'un mois. Une pièce d'identité pourra vous être demandée pour vérifier votre identité.
+                Pour exercer ces droits, contactez-nous par email à <strong>hygieneprotect3d@hotmail.com</strong> ou par téléphone au <strong>07 67 39 38 85</strong>. Nous vous répondrons dans un délai maximum d'un mois. Une pièce d'identité pourra vous être demandée pour vérifier votre identité.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Vous avez également le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) si vous estimez que vos droits ne sont pas respectés : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">www.cnil.fr</a>
@@ -154,7 +154,7 @@ const PrivacyPolicyPage = () => {
               </p>
               <div className="bg-primary-50 p-6 rounded-lg border-2 border-primary-200">
                 <p className="text-gray-900 mb-3 text-lg font-bold">Hygiène Protect 3D</p>
-                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:contact@hygieneprotect3d.fr" className="text-primary-600 hover:underline font-semibold">contact@hygieneprotect3d.fr</a></p>
+                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:HYGIENEPROTECT3D@hotmail.com" className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a></p>
                 <p className="text-gray-700 mb-2"><strong>Téléphone</strong> : <a href="tel:+33767393885" className="text-primary-600 hover:underline font-semibold">07 67 39 38 85</a></p>
                 <p className="text-gray-700 mb-2"><strong>Horaires</strong> : Lundi - Vendredi : 8h00 - 18h00</p>
                 <p className="text-gray-700 mb-2"><strong>Zone d'intervention</strong> : Bondy et Île-de-France (Seine-Saint-Denis, Paris, Val-de-Marne, Seine-et-Marne)</p>

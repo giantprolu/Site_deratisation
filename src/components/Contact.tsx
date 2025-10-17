@@ -8,7 +8,7 @@ const Contact = () => {
     window.location.href = 'tel:0767393885';
   };
   const handleEmailClick = () => {
-    window.location.href = 'mailto:contact@hygieneprotect3d.fr';
+    window.location.href = 'mailto:HYGIENEPROTECT3D@hotmail.com';
   };
   return (
     <>
@@ -148,7 +148,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900">Email</div>
-                      <div className="text-primary-600 hover:text-primary-dark break-all">contact@hygieneprotect3d.fr</div>
+                      <div className="text-primary-600 hover:text-primary-dark break-all">hygieneprotect3d@hotmail.com</div>
                       <div className="text-sm text-gray-500">Réponse sous 24h</div>
                     </div>
                   </button>

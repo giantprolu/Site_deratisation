@@ -6,7 +6,7 @@ const Footer = () => {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:contact@hygieneprotect3d.fr';
+    window.location.href = 'mailto:HYGIENEPROTECT3D@hotmail.com';
   };
 
   return (
@@ -61,7 +61,7 @@ const Footer = () => {
               </button>
               <button onClick={handleEmailClick} className="flex items-start gap-3 text-gray-300 hover:text-primary-light transition-colors group">
                 <Mail className="h-5 w-5 mt-1 flex-shrink-0" />
-                <div className="break-all">contact@hygieneprotect3d.fr</div>
+                <div className="break-all">hygieneprotect3d@hotmail.com</div>
               </button>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
