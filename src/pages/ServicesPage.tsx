@@ -10,9 +10,10 @@ const ServicesPage = () => {
   return (
     <>
       <SEO
-        title="Nos Services"
-        description="Découvrez notre gamme complète de services professionnels de nettoyage et d'hygiène. Solutions adaptées à vos besoins."
+        title="Services Dératisation & Désinsectisation Bondy"
+        description="Nos services professionnels : dératisation (rats, souris), désinsectisation (cafards, punaises), désinfection à Bondy et Île-de-France. Devis gratuit ☎ 07 67 39 38 85"
         canonical="/services"
+        keywords="services dératisation, désinsectisation professionnelle, extermination nuisibles, traitement punaises de lit, élimination cafards, dératisation entreprise"
       />
       <div className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

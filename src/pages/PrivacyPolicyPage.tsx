@@ -93,9 +93,6 @@ const PrivacyPolicyPage = () => {
                 <strong>Email :</strong> privacy@cleanpro.fr<br />
                 <strong>Adresse :</strong> 1 rue de la Propreté, 75001 Paris
               </p>
-              <p className="text-gray-600 text-sm">
-                Dernière mise à jour : [insérer la date]
-              </p>
             </section>
           </div>
         </div>
