@@ -5,7 +5,7 @@ const path = require('path');
 const sitemapPath = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
 
 // Domain par défaut si SITE_URL non défini
-const DEFAULT_SITE_URL = 'https://site-deratisation.vercel.app';
+const DEFAULT_SITE_URL = 'https://hygiene-protect-3d.fr';
 
 const siteUrl = (process.env.SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, '');
 
