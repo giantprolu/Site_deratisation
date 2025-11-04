@@ -9,7 +9,7 @@
 3. Renseignez les informations :
    - **Nom du compte** : Hygiène Protect 3D
    - **Nom de la propriété** : Site Web Dératisation
-   - **URL du site** : https://site-deratisation.vercel.app
+   - **URL du site** : https://hygiene-protect-3d.fr
    - **Secteur** : Services professionnels
    - **Fuseau horaire** : Paris
 
@@ -42,7 +42,7 @@ git push
 
 ### 5. Vérifier l'installation
 
-1. Allez sur votre site : https://site-deratisation.vercel.app
+1. Allez sur votre site : https://hygiene-protect-3d.fr
 2. Dans Google Analytics, allez dans **Rapports** > **Temps réel**
 3. Vous devriez voir votre visite en direct ! 🎉
 

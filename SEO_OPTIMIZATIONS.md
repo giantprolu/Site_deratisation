@@ -80,9 +80,9 @@ Chaque page contient maintenant :
 
 ### 2. 🔍 Google Search Console (10 min)
 1. Allez sur [Google Search Console](https://search.google.com/search-console)
-2. Ajoutez votre propriété : `https://site-deratisation.vercel.app`
+2. Ajoutez votre propriété : `https://hygiene-protect-3d.fr`
 3. Vérifiez la propriété (méthode recommandée : balise HTML)
-4. Soumettez votre sitemap : `https://site-deratisation.vercel.app/sitemap.xml`
+4. Soumettez votre sitemap : `https://hygiene-protect-3d.fr/sitemap.xml`
 
 ### 3. 📱 Google My Business (CRUCIAL - 20 min)
 Pour votre activité locale, c'est **ESSENTIEL** :
@@ -93,7 +93,7 @@ Pour votre activité locale, c'est **ESSENTIEL** :
    - **Catégorie** : Service de lutte contre les nuisibles
    - **Zone de service** : Bondy, Seine-Saint-Denis, Île-de-France
    - **Téléphone** : 07 67 39 38 85
-   - **Site web** : https://site-deratisation.vercel.app
+   - **Site web** : https://hygiene-protect-3d.fr
    - **Horaires** : Lundi-Vendredi 8h-18h
    - **Description** : Copiez celle de votre page d'accueil
 3. Ajoutez des photos de vos interventions
