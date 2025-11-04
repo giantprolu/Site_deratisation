@@ -1,0 +1,101 @@
+# Hygiène Protect 3D - Configuration Apache pour SEO optimal
+# Expert N°1 Dératisation Paris & Île-de-France
+
+# Compression GZIP pour améliorer la vitesse de chargement
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Cache des ressources statiques
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    
+    # CSS et JS
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 day"
+    
+    # Fonts
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+    ExpiresByType application/font-woff "access plus 1 month"
+</IfModule>
+
+# Headers de sécurité et SEO
+<IfModule mod_headers.c>
+    # Sécurité
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # SEO et performance
+    Header always set Vary "Accept-Encoding"
+    Header always set Cache-Control "public, max-age=31536000" "expr=%{REQUEST_URI} =~ m#\.(ico|css|js|gif|jpe?g|png|webp|woff2?)$#"
+</IfModule>
+
+# Redirections SEO importantes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Forcer HTTPS (important pour le SEO)
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Forcer www ou non-www (choisir une version)
+    RewriteCond %{HTTP_HOST} ^www\.hygiene-protect-3d\.fr [NC]
+    RewriteRule ^(.*)$ https://hygiene-protect-3d.fr/$1 [L,R=301]
+    
+    # Redirections d'anciennes URLs vers nouvelles (exemples)
+    # RewriteRule ^ancienne-page/?$ /nouvelle-page [R=301,L]
+    
+    # Remove trailing slash (éviter le duplicate content)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{THE_REQUEST} /+([^?\s]+?)/+[?\s]
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+    
+    # Gestion des erreurs 404 vers page d'accueil
+    ErrorDocument 404 /
+</IfModule>
+
+# Types MIME pour les nouvelles extensions
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType image/webp .webp
+    AddType font/woff2 .woff2
+</IfModule>
+
+# Masquer la signature du serveur
+ServerTokens Prod
+ServerSignature Off
+
+# Optimisations pour Core Web Vitals
+<IfModule mod_pagespeed.c>
+    ModPagespeed on
+    ModPagespeedEnableFilters rewrite_css,rewrite_javascript,rewrite_images
+    ModPagespeedEnableFilters lazyload_images
+    ModPagespeedEnableFilters inline_css,inline_javascript
+</IfModule>

@@ -1,8 +1,15 @@
-# Hygiène Protect 3D - Robots.txt
-# Dératisation Bondy & Île-de-France
+# Hygiène Protect 3D - Expert N°1 Dératisation Paris & Île-de-France
+# Intervention 24h/24 - Devis gratuit ☎ 07 67 39 38 85
 
 User-agent: *
 Allow: /
+
+# Pages importantes à crawler en priorité
+Allow: /services/
+Allow: /contact
+Allow: /services/deratisation
+Allow: /services/desinsectisation  
+Allow: /services/desinfection
 
 # Sitemap
 Sitemap: https://hygiene-protect-3d.fr/sitemap.xml
@@ -11,13 +18,39 @@ Sitemap: https://hygiene-protect-3d.fr/sitemap.xml
 Disallow: /src/
 Disallow: /*.json
 Disallow: /*.config.*
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /package.json
 
-# Autoriser les moteurs de recherche principaux
+# Autoriser et prioriser les moteurs de recherche principaux
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Optimisation pour les moteurs de recherche locaux
+User-agent: YandexBot
+Allow: /
+
+# Bloquer les bots indésirables
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

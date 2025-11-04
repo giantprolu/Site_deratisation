@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm run generate-sitemap",
+    "prebuild": "npm run generate-sitemap && npm run generate-local-sitemap",
     "build": "vite build",
-  "generate-sitemap": "node scripts/generate-sitemap.cjs",
+    "generate-sitemap": "node scripts/generate-sitemap.cjs",
+    "generate-local-sitemap": "node scripts/generate-local-sitemap.cjs",
+    "seo-audit": "npm run generate-sitemap && npm run generate-local-sitemap",
     "lint": "eslint .",
     "preview": "vite preview"
   },
