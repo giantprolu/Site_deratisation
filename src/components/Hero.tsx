@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <SEO
         title="Accueil"
-        description="Bienvenue sur Hygiène Protect 3D, votre spécialiste en dératisation, désinsectisation et désinfection. Découvrez nos services professionnels écoresponsables."
+        description="Expert dératisation Paris & IDF. Intervention 1H, garantie résultat. Devis gratuit 24h/24 ☎ 07 67 39 38 85"
       />
       <div id="home" className="relative min-h-screen bg-gradient-to-br from-primary-50 via-white to-blue-50 pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
@@ -20,7 +20,7 @@ const Hero = () => {
                 Hygiène Protect 3D
               </h1>
               <p className="text-description mb-8">
-                Votre partenaire de confiance pour des solutions professionnelles de dératisation, désinsectisation et désinfection en Île-de-France.
+                Expert certifié en dératisation, désinsectisation et désinfection. Intervention d'urgence 24h/24 en Île-de-France. Garantie résultat.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a href="#contact" className="btn-primary">
@@ -65,7 +65,7 @@ const Hero = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                  alt="Professionnel de la désinfection"
+                  alt="Expert dératisation Paris - Professionnel anti-nuisibles Île-de-France"
                   className="w-full h-[600px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/30 to-transparent"></div>

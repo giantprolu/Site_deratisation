@@ -40,24 +40,24 @@ export const seoData = {
     ]
   },
 
-  // Titres optimisés par page
+  // Titres optimisés par page (50-60 caractères max)
   pageTitles: {
-    home: ' Dératisation Paris & IDF - Expert N°1 | Hygiène Protect 3D',
-    services: 'Services Anti-Nuisibles Paris | Expert Certifié | Hygiène Protect 3D',
-    contact: 'Contact Urgence 24h/24 | Dératisation Paris | Hygiène Protect 3D',
-    deratisation: 'Dératisation Paris & IDF Intervention 1H | Expert Certifié',
-    desinsectisation: 'Désinsectisation Paris Punaises, Cafards | Expert Agréé',
-    desinfection: 'Désinfection COVID Paris | Protocole Certifié | Hygiène Protect 3D'
+    home: 'Dératisation Paris & IDF - Expert N°1 | Hygiène Protect',
+    services: 'Services Anti-Nuisibles Paris | Expert Certifié',
+    contact: 'Contact Urgence 24h | Dératisation Paris Expert',
+    deratisation: 'Dératisation Paris & IDF Intervention 1H | Expert',
+    desinsectisation: 'Désinsectisation Paris Punaises, Cafards | Expert',
+    desinfection: 'Désinfection Paris | Protocole Certifié'
   },
 
-  // Descriptions optimisées
+  // Descriptions optimisées (140-160 caractères max)
   descriptions: {
-    home: 'HYGIÈNE PROTECT 3D - Expert N°1 en dératisation Paris & Île-de-France Intervention en 1H  Garantie résultat  Devis gratuit 24h/24 ☎ 07 67 39 38 85',
-    services: 'Services anti-nuisibles Paris : Dératisation, désinsectisation, désinfection. Expert certifié, intervention 24h/24. Devis gratuit ☎ 07 67 39 38 85',
-    contact: 'Contactez notre expert dératisation Paris 24h/24. Intervention d\'urgence en 1H. Devis gratuit par téléphone ☎ 07 67 39 38 85',
-    deratisation: 'Dératisation professionnelle Paris & IDF. Élimination garantie de rats et souris. Technicien agréé, intervention 24h/24. Devis gratuit ☎ 07 67 39 38 85',
-    desinsectisation: 'Désinsectisation Paris : punaises de lit, cafards, fourmis. Traitement professionnel garanti. Expert certifié. Devis gratuit ☎ 07 67 39 38 85',
-    desinfection: 'Désinfection professionnelle Paris. Protocole COVID-19 certifié. Bureaux, restaurants, logements. Expert agréé. Devis gratuit ☎ 07 67 39 38 85'
+    home: 'Expert dératisation Paris & IDF. Intervention 1H, garantie résultat. Devis gratuit 24h/24 ☎ 07 67 39 38 85',
+    services: 'Services anti-nuisibles Paris : dératisation, désinsectisation, désinfection. Expert certifié 24h/24 ☎ 07 67 39 38 85',
+    contact: 'Contactez notre expert dératisation Paris 24h/24. Intervention urgence 1H. Devis gratuit ☎ 07 67 39 38 85',
+    deratisation: 'Dératisation professionnelle Paris & IDF. Élimination garantie rats/souris. Intervention 24h/24 ☎ 07 67 39 38 85',
+    desinsectisation: 'Désinsectisation Paris : punaises, cafards, fourmis. Traitement professionnel garanti. Expert certifié ☎ 07 67 39 38 85',
+    desinfection: 'Désinfection professionnelle Paris. Protocole certifié. Bureaux, restaurants. Expert agréé ☎ 07 67 39 38 85'
   },
 
   // Schema FAQ par service

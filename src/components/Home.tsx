@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import InterventionProcess from '../components/InterventionProcess';
 import Contact from '../components/Contact';
 import ContactSidebar from '../components/ContactSidebar';
+import MapSection from '../components/MapSection';
 
 const Home = () => {
   return (
@@ -34,6 +35,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+      {/* Section de carte dédiée entre Contact et Footer */}
+      <MapSection />
     </>
   );
 };

@@ -1,12 +1,9 @@
 import { PhoneCall, Mail, MapPin, Leaf } from 'lucide-react';
+import ProtectedEmail from './ProtectedEmail';
 
 const Footer = () => {
   const handlePhoneClick = () => {
     window.location.href = 'tel:0767393885';
-  };
-
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:HYGIENEPROTECT3D@hotmail.com';
   };
 
   return (
@@ -59,10 +56,13 @@ const Footer = () => {
                   <div className="text-sm text-gray-400">24h/24 & 7j/7</div>
                 </div>
               </button>
-              <button onClick={handleEmailClick} className="flex items-start gap-3 text-gray-300 hover:text-primary-light transition-colors group">
+              <div className="flex items-start gap-3 text-gray-300 hover:text-primary-light transition-colors group">
                 <Mail className="h-5 w-5 mt-1 flex-shrink-0" />
-                <div className="break-all">hygieneprotect3d@hotmail.com</div>
-              </button>
+                <ProtectedEmail 
+                  email="hygieneprotect3d@hotmail.com"
+                  className="text-gray-300 hover:text-primary-light"
+                />
+              </div>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
                 <div>

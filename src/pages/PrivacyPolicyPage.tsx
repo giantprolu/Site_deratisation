@@ -154,7 +154,7 @@ const PrivacyPolicyPage = () => {
               </p>
               <div className="bg-primary-50 p-6 rounded-lg border-2 border-primary-200">
                 <p className="text-gray-900 mb-3 text-lg font-bold">Hygiène Protect 3D</p>
-                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a href="mailto:HYGIENEPROTECT3D@hotmail.com" className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a></p>
+                <p className="text-gray-700 mb-2"><strong>Email</strong> : <a className="text-primary-600 hover:underline font-semibold">hygieneprotect3d@hotmail.com</a></p>
                 <p className="text-gray-700 mb-2"><strong>Téléphone</strong> : <a href="tel:+33767393885" className="text-primary-600 hover:underline font-semibold">07 67 39 38 85</a></p>
                 <p className="text-gray-700 mb-2"><strong>Horaires</strong> : Lundi - Vendredi : 8h00 - 18h00</p>
                 <p className="text-gray-700 mb-2"><strong>Zone d'intervention</strong> : Bondy et Île-de-France (Seine-Saint-Denis, Paris, Val-de-Marne, Seine-et-Marne)</p>

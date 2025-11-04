@@ -13,7 +13,7 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title,
-  description = "HYGIÈNE PROTECT 3D - Expert N°1 en dératisation Paris & Île-de-France Intervention en 1H  Garantie résultat  Devis gratuit 24h/24  07 67 39 38 85",
+  description = "Expert dératisation Paris & IDF. Intervention 1H, garantie résultat. Devis gratuit 24h/24 ☎ 07 67 39 38 85",
   canonical,
   type = 'website',
   name = 'Hygiène Protect 3D',
@@ -29,9 +29,9 @@ const SEO: React.FC<SEOProps> = ({
   
   const isHomePage = !canonical || canonical === "/";
   
-  // Titre optimisé SEO ultra-compétitif (50-60 caractères)
+  // Titre optimisé SEO (50-60 caractères)
   const pageTitle = isHomePage 
-    ? `🥇 Dératisation Paris & IDF - Expert N°1 | Hygiène Protect 3D` 
+    ? `Dératisation Paris & IDF - Expert N°1 | Hygiène Protect` 
     : `${title} Paris & IDF | Expert Certifié | ${name}`;
 
   return (
