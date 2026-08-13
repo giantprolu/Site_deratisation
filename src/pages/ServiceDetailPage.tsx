@@ -102,6 +102,43 @@ const ServiceDetailPage = () => {
                 </div>
               </div>
 
+              {/* Galerie photos/vidéos réelles */}
+              {service.gallery && service.gallery.length > 0 && (
+                <div className="mb-12">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-3 text-left">
+                    Nos interventions en images
+                  </h2>
+                  <p className="text-gray-600 mb-8 text-left">
+                    Photos et vidéos prises sur le terrain lors de nos interventions à Paris et en Île-de-France.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {service.gallery.map((item, index) => (
+                      <figure key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        {item.type === 'video' ? (
+                          <video
+                            src={item.src}
+                            poster={item.poster}
+                            controls
+                            playsInline
+                            preload="none"
+                            className="w-full h-64 object-cover bg-black"
+                            aria-label={item.alt}
+                          />
+                        ) : (
+                          <img
+                            src={item.src}
+                            alt={item.alt}
+                            loading="lazy"
+                            className="w-full h-64 object-cover"
+                          />
+                        )}
+                        <figcaption className="p-4 text-sm text-gray-700">{item.caption}</figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Équipements */}
               {service.equipments && service.equipments.length > 0 && (
                 <div className="mb-12">

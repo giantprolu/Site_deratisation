@@ -15,12 +15,19 @@ export interface Service {
   imageAlt?: string;
   imageTitle?: string;
   interventionSteps: { icon: string; title: string; description: string }[];
-  equipments?: { 
-    name: string; 
-    description: string; 
+  equipments?: {
+    name: string;
+    description: string;
     image: string;
     imageAlt?: string;
     imageTitle?: string;
+  }[];
+  gallery?: {
+    type: 'image' | 'video';
+    src: string;
+    poster?: string;
+    alt: string;
+    caption: string;
   }[];
 }
 
@@ -82,6 +89,26 @@ export const services: Service[] = [
         image: '/images/deratisation-postes-appats.webp',
         imageAlt: 'Postes d\'appâtage sécurisés professionnels avec rodenticides pour dératisation Paris',
         imageTitle: 'Station appâtage anti-rats Paris - Équipement sécurisé certifié avec Brodifacoum'
+      }
+    ],
+    gallery: [
+      {
+        type: 'image',
+        src: '/images/station-appatage-rongeurs-numerotee-1.webp',
+        alt: 'Station d\'appâtage numérotée pour rongeurs avec étiquette réglementaire conforme',
+        caption: 'Station numérotée avec étiquette d\'avertissement conforme'
+      },
+      {
+        type: 'image',
+        src: '/images/station-appatage-rongeurs-numerotee-2.webp',
+        alt: 'Étiquette de conformité et numéro de suivi sur une station d\'appâtage anti-rongeurs',
+        caption: 'Étiquette de traçabilité et numéro d\'identification de la station'
+      },
+      {
+        type: 'image',
+        src: '/images/station-appatage-rongeurs-numerotee-3.webp',
+        alt: 'Station d\'appâtage anti-rongeurs installée et fixée sous un équipement de cuisine professionnelle',
+        caption: 'Installation en cuisine professionnelle, à un point de passage identifié des rongeurs'
       }
     ]
   },
@@ -224,6 +251,45 @@ export const services: Service[] = [
         imageAlt: 'Produits insecticides professionnels certifiés pour désinsectisation',
         imageTitle: 'Biocides anti-insectes certifiés - Traitement professionnel Paris'
       }
+    ],
+    gallery: [
+      {
+        type: 'image',
+        src: '/images/plaque-phero-mites-alimentaires-1.webp',
+        alt: 'Plaque de piégeage à phéromones pour mites alimentaires posée en hauteur près d\'un placard',
+        caption: 'Plaque de piégeage à phéromones contre les mites alimentaires'
+      },
+      {
+        type: 'image',
+        src: '/images/plaque-phero-mites-alimentaires-2.webp',
+        alt: 'Plaque de piégeage à phéromones anti-mites suspendue dans une réserve alimentaire',
+        caption: 'Installation en réserve pour surveiller et capturer les mites'
+      },
+      {
+        type: 'image',
+        src: '/images/plaque-phero-mites-alimentaires-3.webp',
+        alt: 'Plaque de piégeage à phéromones avec mites alimentaires capturées, preuve d\'infestation',
+        caption: 'Mites capturées : diagnostic précis du niveau d\'infestation'
+      },
+      {
+        type: 'video',
+        src: '/videos/documentation-intervention-cafards.mp4',
+        poster: '/images/documentation-intervention-cafards-poster.webp',
+        alt: 'Vidéo de repérage de cafards lors d\'une intervention de désinsectisation',
+        caption: 'Chaque intervention est documentée par photos et vidéos : ici, repérage de blattes avant traitement'
+      },
+      {
+        type: 'image',
+        src: '/images/produit-imidasect-gel-insecticide.webp',
+        alt: 'Gel insecticide professionnel Imidasect utilisé pour le traitement des cafards',
+        caption: 'Gel insecticide professionnel Imidasect, produit homologué'
+      },
+      {
+        type: 'image',
+        src: '/images/produit-geraniov-g10-biocinov.webp',
+        alt: 'Insecticide et répulsif professionnel Geraniov G10 au géraniol d\'origine végétale',
+        caption: 'Geraniov G10, insecticide et répulsif à base de géraniol d\'origine végétale'
+      }
     ]
   },
   {
@@ -290,6 +356,29 @@ export const services: Service[] = [
         image: '/images/technicien-lance-telescopique.webp',
         imageAlt: 'Technicien utilisant lance télescopique professionnelle pour destruction nid frelons',
         imageTitle: 'Perches télescopiques Paris - Intervention professionnelle anti-frelons longue portée'
+      }
+    ],
+    gallery: [
+      {
+        type: 'video',
+        src: '/videos/intervention-nid-frelons-hauteur-1.mp4',
+        poster: '/images/intervention-nid-frelons-hauteur-1-poster.webp',
+        alt: 'Vidéo d\'un technicien en tenue de protection traitant un nid de frelons en hauteur sous une charpente',
+        caption: 'Traitement d\'un nid sous charpente, technicien équipé en combinaison de protection'
+      },
+      {
+        type: 'video',
+        src: '/videos/intervention-nid-frelons-hauteur-2.mp4',
+        poster: '/images/intervention-nid-frelons-hauteur-2-poster.webp',
+        alt: 'Vidéo d\'une intervention en hauteur sur échelle pour la destruction d\'un nid de frelons dans une charpente',
+        caption: 'Intervention sécurisée sur échelle pour atteindre le nid en hauteur'
+      },
+      {
+        type: 'video',
+        src: '/videos/intervention-nid-frelons-hauteur-3.mp4',
+        poster: '/images/intervention-nid-frelons-hauteur-3-poster.webp',
+        alt: 'Vidéo de traitement d\'un nid de frelons dans la charpente d\'un bâtiment agricole',
+        caption: 'Localisation et traitement du nid dans la charpente'
       }
     ]
   },
