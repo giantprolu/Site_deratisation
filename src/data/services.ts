@@ -289,6 +289,12 @@ export const services: Service[] = [
         src: '/images/produit-geraniov-g10-biocinov.webp',
         alt: 'Insecticide et répulsif professionnel Geraniov G10 au géraniol d\'origine végétale',
         caption: 'Geraniov G10, insecticide et répulsif à base de géraniol d\'origine végétale'
+      },
+      {
+        type: 'image',
+        src: '/images/traitement-vrillettes-bois-vermoulu.webp',
+        alt: 'Poutre en bois criblée de trous de sortie de vrillettes et galeries vermoulues avant traitement',
+        caption: 'Traitement vrillettes : bois vermoulu criblé de trous de sortie avant intervention'
       }
     ]
   },
